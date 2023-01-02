@@ -1,4 +1,4 @@
-FROM debian:stretch
+FROM debian:buster
 
 LABEL maintainer="buluma"
 LABEL build_update="2023-01-02"
@@ -9,7 +9,7 @@ ENV container docker
 
 # Enable systemd.
 RUN apt-get update ; \
-    apt-get install -y systemd systemd-sysv apt-utils ; \
+    apt-get install -y systemd systemd-sysv ; \
     apt-get clean ; \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* ; \
     rm -rf /lib/systemd/system/multi-user.target.wants/* ; \
