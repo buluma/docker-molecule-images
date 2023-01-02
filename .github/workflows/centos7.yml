@@ -1,0 +1,70 @@
+---
+name: centos-7
+
+on:
+  pull_request:
+  push:
+    paths:
+      - 'centos7/**'
+      - '.github/workflows/centos7.yml'
+  schedule:
+    - cron: '10 3,12 * * 2,5'
+  workflow_dispatch:
+
+jobs:
+  # Test the image builds and works correctly.
+  test:
+    name: Test centos7
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-20.04]
+
+    steps:
+      - uses: actions/checkout@v2.6.0
+
+      - name: Test building image.
+        run: cd centos7 && docker build -t centos7 .
+
+      - name: Run the built image.
+        run: docker run --name test-container -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro centos7
+
+  # If on master branch, build and release image.
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    # needs: test
+    if: github.ref == 'refs/heads/master'
+
+    steps:
+      - uses: actions/checkout@v2.6.0
+      - uses: docker/setup-qemu-action@v1
+      - name: Set up Docker Buildx
+        id: buildx
+        uses: buluma/setup-buildx-action@0.1.0
+      - name: Available platforms
+        run: echo ${{ steps.buildx.outputs.platforms }}
+
+      - name: Login to DockerHub
+        uses: docker/login-action@v2.1.0
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v2.1.0
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push image.
+        uses: docker/build-push-action@v3.2.0
+        with:
+          context: centos7/
+          file: centos7/Dockerfile
+          platforms: linux/amd64, linux/arm64
+          push: true
+          tags: |
+            ${{ github.repository }}:centos7, buluma/docker-molecule-centos7:latest
+            ghcr.io/${{ github.repository }}:centos7
