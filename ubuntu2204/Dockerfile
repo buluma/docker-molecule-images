@@ -1,7 +1,7 @@
 FROM ubuntu:22.04
 
-LABEL maintainer="buluma"
-LABEL build_update="2023-01-02"
+LABEL maintainer="Michael Buluma"
+LABEL build_date="2023-11-26"
 
 ARG DEBIAN_FRONTEND=noninteractive
 
