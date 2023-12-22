@@ -1,7 +1,7 @@
 FROM debian:buster
 
 LABEL maintainer="buluma"
-LABEL build_update="2023-01-02"
+LABEL build_date="2023-12-23"
 
 ARG DEBIAN_FRONTEND=noninteractive
 

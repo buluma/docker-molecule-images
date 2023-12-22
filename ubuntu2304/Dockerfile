@@ -1,6 +1,6 @@
-FROM ubuntu:20.04
+FROM ubuntu:23.04
 
-LABEL maintainer="buluma"
+LABEL maintainer="Michael Buluma"
 LABEL build_date="2023-12-23"
 
 ARG DEBIAN_FRONTEND=noninteractive

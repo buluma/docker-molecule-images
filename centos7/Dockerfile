@@ -1,7 +1,7 @@
 FROM centos:7
 
 LABEL maintainer="buluma"
-LABEL build_update="2023-01-02"
+LABEL build_date="2023-12-23"
 
 ENV container=docker
 
