@@ -6,7 +6,7 @@ on:
   push:
     paths:
       - 'ubuntu2304/**'
-      - '.github/workflows/ubuntu2204.yml'
+      - '.github/workflows/ubuntu2304.yml'
   schedule:
     - cron: '10 6,15 * * 1,6'
   workflow_dispatch:
