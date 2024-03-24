@@ -1,12 +1,12 @@
 ---
-name: debian9
+name: debian11
 
 on:
   pull_request:
   push:
     paths:
-      - 'debian9/**'
-      - '.github/workflows/debian9.yml'
+      - 'debian11/**'
+      - '.github/workflows/debian11.yml'
   schedule:
     - cron: '10 6,15 * * 1,6'
   workflow_dispatch:
@@ -16,7 +16,7 @@ permissions: write-all
 jobs:
   # Test the image builds and works correctly.
   test:
-    name: Test debian9
+    name: Test debian11
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -26,10 +26,10 @@ jobs:
       - uses: actions/checkout@v2.6.0
 
       - name: Test building image.
-        run: cd debian9 && docker build -t debian9 .
+        run: cd debian11 && docker build -t debian11 .
 
       - name: Run the built image.
-        run: docker run --name test-container -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro debian9
+        run: docker run --name test-container -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro debian11
 
   # If on master branch, build and release image.
   release:
@@ -59,9 +59,9 @@ jobs:
       - name: Build and push image.
         uses: docker/build-push-action@v3
         with:
-          context: debian9/
-          file: debian9/Dockerfile
+          context: debian11/
+          file: debian11/Dockerfile
           platforms: linux/amd64, linux/arm64
           push: true
           tags: |
-            ${{ github.repository }}:debian9
+            ${{ github.repository }}:debian11
