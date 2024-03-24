@@ -63,4 +63,3 @@ jobs:
           push: true
           tags: |
             ${{ github.repository }}:ubuntu2304
-            ghcr.io/${{ github.repository }}:ubuntu2304
