@@ -67,4 +67,3 @@ jobs:
           push: true
           tags: |
             ${{ github.repository }}:centos7
-            ghcr.io/${{ github.repository }}:centos7
