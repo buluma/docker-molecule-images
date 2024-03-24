@@ -66,5 +66,5 @@ jobs:
           platforms: linux/amd64, linux/arm64
           push: true
           tags: |
-            ${{ github.repository }}:debian11, buluma/docker-molecule-debian11:latest
+            ${{ github.repository }}:debian11
             ghcr.io/${{ github.repository }}:debian11

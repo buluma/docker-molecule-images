@@ -66,5 +66,5 @@ jobs:
           platforms: linux/amd64, linux/arm64
           push: true
           tags: |
-            ${{ github.repository }}:ubuntu2004, buluma/docker-molecule-ubuntu2004:latest
+            ${{ github.repository }}:ubuntu2004
             ghcr.io/${{ github.repository }}:ubuntu2004

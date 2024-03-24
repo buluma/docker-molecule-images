@@ -61,10 +61,10 @@ jobs:
       - name: Build and push image.
         uses: docker/build-push-action@v3.2.0
         with:
-          context: ubuntu2204/
-          file: ubuntu2204/Dockerfile
+          context: ubuntu2304/
+          file: ubuntu2304/Dockerfile
           platforms: linux/amd64, linux/arm64
           push: true
           tags: |
-            ${{ github.repository }}:ubuntu2304, buluma/docker-molecule-ubuntu2304:latest
+            ${{ github.repository }}:ubuntu2304
             ghcr.io/${{ github.repository }}:ubuntu2304

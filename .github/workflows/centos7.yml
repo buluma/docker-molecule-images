@@ -66,5 +66,5 @@ jobs:
           platforms: linux/amd64, linux/arm64
           push: true
           tags: |
-            ${{ github.repository }}:centos7, buluma/docker-molecule-centos7:latest
+            ${{ github.repository }}:centos7
             ghcr.io/${{ github.repository }}:centos7
