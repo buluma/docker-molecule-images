@@ -1,5 +1,5 @@
 ---
-name: ubuntu-24.04
+name: ubuntu-23.04
 
 on:
   pull_request:
@@ -12,6 +12,10 @@ on:
   workflow_dispatch:
 
 permissions: write-all
+
+concurrency:
+  group: ${{ github.ref }}-${{ github.workflow }}
+  cancel-in-progress: true
 
 jobs:
   # Test the image builds and works correctly.
@@ -49,7 +53,7 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Login to GitHub Container Registry
+      - name: Logain to GitHub Container Registry
         uses: docker/login-action@v3.1.0
         with:
           registry: ghcr.io
