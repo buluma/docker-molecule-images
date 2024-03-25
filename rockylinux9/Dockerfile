@@ -15,24 +15,12 @@ rm -f /lib/systemd/system/sockets.target.wants/*initctl*; \
 rm -f /lib/systemd/system/basic.target.wants/*;\
 rm -f /lib/systemd/system/anaconda.target.wants/*;
 
-# Install requirements.
-RUN yum -y install rpm dnf-plugins-core \
- && yum -y update \
- && yum -y install \
-      epel-release \
-      initscripts \
-      sudo \
-      which \
-      hostname \
-      libyaml \
-      python3 \
-      python3-pip \
-      python3-pyyaml \
- && yum clean all
+# Upgrade packages.
+RUN yum -y update \
+&& yum clean all
 
- # Upgrade packages.
- RUN yum -y update \
-  && yum clean all
+# Install pip
+RUN python3-pip python3-setuptools python3-wheel
 
 VOLUME ["/sys/fs/cgroup"]
 CMD ["/usr/lib/systemd/systemd"]
