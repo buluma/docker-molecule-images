@@ -34,6 +34,9 @@ RUN yum -y install rpm dnf-plugins-core \
  RUN yum -y update \
   && yum clean all
 
+COPY requirements.txt ./
+RUN pip install -r requirements.txt
+
 RUN pip install setuptools==69.2.0
 
 VOLUME ["/sys/fs/cgroup"]
