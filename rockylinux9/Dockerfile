@@ -20,7 +20,7 @@ RUN yum -y update \
 && yum clean all
 
 # Install pip
-RUN python3-pip python3-setuptools python3-wheel
+RUN yum -y install python3-pip python3-setuptools python3-wheel
 
 VOLUME ["/sys/fs/cgroup"]
 CMD ["/usr/lib/systemd/systemd"]
