@@ -33,7 +33,7 @@ jobs:
         run: cd alpine-openrc && docker build -t alpine-openrc .
 
       - name: Run the built image.
-        run: docker run --name test-container -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro alpine-openrc
+        run: docker run --name test-container -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw alpine-openrc
 
   # If on master branch, build and release image.
   release:
