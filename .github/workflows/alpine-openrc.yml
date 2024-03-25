@@ -88,7 +88,7 @@ jobs:
           platforms: linux/amd64, linux/arm64, linux/arm/v6, linux/arm/v7, linux/arm64/v8, linux/ppc64le, linux/s390x, linux/386
           push: ${{ github.event_name != 'pull_request' }}
           tags: |
-            ${{ github.repository }}:alpine-openrc
+            ${{ github.repository }}:alpine-openrc, ${{ github.repository }}:alpine-openrc_latest
           labels: ${{ steps.meta.outputs.labels }}
 
       - name: Docker Scout

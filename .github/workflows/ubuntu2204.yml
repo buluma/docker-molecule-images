@@ -88,7 +88,7 @@ jobs:
           platforms: linux/amd64, linux/arm64, linux/arm/v7, linux/arm64/v8, linux/ppc64le, linux/s390x
           push: ${{ github.event_name != 'pull_request' }}
           tags: |
-            ${{ github.repository }}:ubuntu2204, ${{ github.repository }}:jammy
+            ${{ github.repository }}:ubuntu2204, ${{ github.repository }}:jammy, ${{ github.repository }}:ubuntu_latest
           labels: ${{ steps.meta.outputs.labels }}
 
       - name: Docker Scout
