@@ -33,7 +33,7 @@ jobs:
         run: cd fedora37 && docker build -t fedora37 .
 
       - name: Run the built image.
-        run: docker run --name test-container -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro fedora37
+        run: docker run --name test-container -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw fedora37
 
   # If on master branch, build and release image.
   release:

@@ -33,7 +33,7 @@ jobs:
         run: cd centos7 && docker build -t centos7 .
 
       - name: Run the built image.
-        run: docker run --name test-container -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro centos7
+        run: docker run --name test-container -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw centos7
 
   # If on master branch, build and release image.
   release:
