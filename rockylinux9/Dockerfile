@@ -36,7 +36,7 @@ RUN pip3 install --upgrade pip
 # Install Ansible via Pip.
 RUN pip3 install $pip_packages
 
-pip install setuptools==69.2.0
+RUN pip3 install setuptools==69.2.0
 
 # Disable requiretty.
 RUN sed -i -e 's/^\(Defaults\s*requiretty\)/#--- \1/'  /etc/sudoers
