@@ -1,5 +1,5 @@
 ---
-name: ubuntu-23.04
+name: ubuntu2304
 
 on:
   pull_request:
