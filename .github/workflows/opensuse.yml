@@ -33,7 +33,7 @@ jobs:
         run: cd opensuse && docker build -t opensuse .
 
       - name: Run the built image.
-        run: docker run --name test-container -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro opensuse
+        run: docker run --name test-container -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw opensuse
 
   # If on master branch, build and release image.
   release:
