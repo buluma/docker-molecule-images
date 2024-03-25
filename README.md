@@ -5,6 +5,9 @@ Docker Molecule Images for Testing Ansible Roles.
 ### Apline
 [![alpine-openrc](https://github.com/buluma/docker-molecule-images/actions/workflows/apline-openrc.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/apline-openrc.yml)
 
+### Archlinux
+[![archlinux](https://github.com/buluma/docker-molecule-images/actions/workflows/archlinux.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/archlinux.yml)
+
 ### Amazonlinux
 [![amazonlinux-1](https://github.com/buluma/docker-molecule-images/actions/workflows/amazonlinux1.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/amazonlinux1.yml)
 [![amazonlinux-2](https://github.com/buluma/docker-molecule-images/actions/workflows/amazonlinux2.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/amazonlinux2.yml)
@@ -27,6 +30,9 @@ Docker Molecule Images for Testing Ansible Roles.
 
 ### Kalilinux
 [![kalilinux-rolling](https://github.com/buluma/docker-molecule-images/actions/workflows/kalilinux.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/kalilinux.yml)
+
+### Opensuse
+[![opensuse](https://github.com/buluma/docker-molecule-images/actions/workflows/opensuse.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/opensuse.yml)
 
 ### Oraclelinux
 [![oraclelinux-7](https://github.com/buluma/docker-molecule-images/actions/workflows/oraclelinux7.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/oraclelinux7.yml)
