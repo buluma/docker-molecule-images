@@ -56,7 +56,7 @@ jobs:
         with:
           context: debian10/
           file: debian10/Dockerfile
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/amd64, linux/arm64, linux/386, linux/arm64/v8, linux/ppc64le, linux/s390x
           push: true
           tags: |
             ${{ github.repository }}:debian10, ${{ github.repository }}:buster
