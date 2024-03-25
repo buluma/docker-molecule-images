@@ -30,20 +30,9 @@ RUN yum -y install rpm dnf-plugins-core \
       python3-pyyaml \
  && yum clean all
 
-# Upgrade pip to latest version.
-RUN pip3 install --upgrade pip
-
-# Install Ansible via Pip.
-RUN pip3 install $pip_packages
-
-RUN pip3 install setuptools==69.2.0
-
-# Disable requiretty.
-RUN sed -i -e 's/^\(Defaults\s*requiretty\)/#--- \1/'  /etc/sudoers
-
-# Install Ansible inventory file.
-RUN mkdir -p /etc/ansible
-RUN echo -e '[local]\nlocalhost ansible_connection=local' > /etc/ansible/hosts
+ # Upgrade packages.
+ RUN yum -y update \
+  && yum clean all
 
 VOLUME ["/sys/fs/cgroup"]
 CMD ["/usr/lib/systemd/systemd"]
