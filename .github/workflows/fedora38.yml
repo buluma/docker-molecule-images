@@ -61,7 +61,7 @@ jobs:
         with:
           context: fedora38/
           file: fedora38/Dockerfile
-          platforms: linux/amd64, linux/arm64
+          platforms: linux/amd64, linux/arm64, linux/ppc64le, linux/s390x
           push: true
           tags: |
             ${{ github.repository }}:fedora38
