@@ -37,6 +37,8 @@ Docker Molecule Images
 [![rockylinux-9](https://github.com/buluma/docker-molecule-images/actions/workflows/rockylinux9.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/rockylinux9.yml)
 
 ### Ubuntu
+[![ubuntu-18.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu1804.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu1804.yml)
 [![ubuntu-20.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2004.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2004.yml)
+[![ubuntu-22.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2204.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2204.yml)
 [![ubuntu-23.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2304.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2304.yml)
 [![ubuntu-24.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2404.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2404.yml)
