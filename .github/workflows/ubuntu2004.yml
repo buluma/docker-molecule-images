@@ -33,7 +33,7 @@ jobs:
         run: cd ubuntu2004 && docker build -t ubuntu2004 .
 
       - name: Run the built image.
-        run: docker run --name test-container -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro ubuntu2004
+        run: docker run --name test-container -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw ubuntu2004
 
   # If on master branch, build and release image.
   release:

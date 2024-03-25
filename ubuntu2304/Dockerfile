@@ -3,8 +3,6 @@ FROM ubuntu:23.04
 LABEL maintainer="Michael Buluma"
 LABEL build_date="2024-03-24"
 
-ARG DEBIAN_FRONTEND=noninteractive
-
 ENV container docker
 
 # Enable apt repositories.
@@ -12,7 +10,7 @@ RUN sed -i 's/# deb/deb/g' /etc/apt/sources.list
 
 # Enable systemd.
 RUN apt-get update ; \
-    apt-get install -y systemd systemd-sysv ; \
+    apt-get install -y systemd ; \
     apt-get clean ; \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* ; \
     cd /lib/systemd/system/sysinit.target.wants/ ; \
@@ -26,18 +24,6 @@ RUN apt-get update ; \
     rm -f /lib/systemd/system/anaconda.target.wants/* ; \
     rm -f /lib/systemd/system/plymouth* ; \
     rm -f /lib/systemd/system/systemd-update-utmp*
-
-# Install requirements.
-RUN apt-get update \
-    && apt-get dist-upgrade -y \
-    && apt-get install -y \
-    python3 \
-    sudo \
-    gnupg \
-    python3-apt \
-    apt-transport-https \
-    ca-certificates \
-    && apt-get clean
 
 VOLUME [ "/sys/fs/cgroup" ]
 
