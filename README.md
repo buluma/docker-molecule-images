@@ -1,5 +1,5 @@
-# docker-molecule-images
-Docker Molecule Images
+# Docker Molecule Images
+Docker Molecule Images for Testing Ansible Roles.
 
 ## Build Status
 ### Apline
