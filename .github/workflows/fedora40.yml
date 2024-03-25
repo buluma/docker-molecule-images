@@ -85,11 +85,10 @@ jobs:
           sbom: true
           provenance: mode=max
           file: fedora40/Dockerfile
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/amd64, linux/arm64, linux/ppc64le, linux/s390x
           push: ${{ github.event_name != 'pull_request' }}
           tags: |
             ${{ github.repository }}:fedora40
-            ghcr.io/buluma/docker-molecule-images:fedora40
           labels: ${{ steps.meta.outputs.labels }}
 
       - name: Docker Scout
@@ -97,7 +96,9 @@ jobs:
         if: ${{ github.event_name == 'pull_request' }}
         uses: docker/scout-action@dd36f5b0295baffa006aa6623371f226cc03e506
         with:
-          command: cves
+          command: quickview,cves,recommendations,sbom,environment
           image: ${{ steps.meta.outputs.tags }}
+          environment: prod
+          organization: shadownet
           only-severities: critical,high
           exit-code: true
