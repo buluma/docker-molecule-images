@@ -64,4 +64,4 @@ jobs:
           platforms: linux/386, linux/amd64
           push: true
           tags: |
-            ${{ github.repository }}:debian12
+            ${{ github.repository }}:debian12, ${{ github.repository }}:bookworm
