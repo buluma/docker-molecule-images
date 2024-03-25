@@ -3,7 +3,7 @@ Docker Molecule Images for Testing Ansible Roles.
 
 ## Build Status
 ### Apline
-[![alpine-openrc](https://github.com/buluma/docker-molecule-images/actions/workflows/apline-openrc.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/apline-openrc.yml)
+[![alpine-openrc](https://github.com/buluma/docker-molecule-images/actions/workflows/alpine-openrc.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/alpine-openrc.yml)
 
 ### Archlinux
 [![archlinux](https://github.com/buluma/docker-molecule-images/actions/workflows/archlinux.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/archlinux.yml)
