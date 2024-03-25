@@ -1,7 +1,7 @@
 # docker-molecule-images
 Docker Molecule Images
 
-# Build Status
+## Build Status
 [![alpine-openrc](https://github.com/buluma/docker-molecule-images/actions/workflows/apline-openrc.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/apline-openrc.yml)
 [![amazonlinux-1](https://github.com/buluma/docker-molecule-images/actions/workflows/amazonlinux1.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/amazonlinux1.yml)
 [![amazonlinux-2](https://github.com/buluma/docker-molecule-images/actions/workflows/amazonlinux2.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/amazonlinux2.yml)
@@ -14,3 +14,15 @@ Docker Molecule Images
 [![fedora38](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora38.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora38.yml)
 [![fedora39](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora39.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora39.yml)
 [![fedora40](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora40.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora40.yml)
+[![kalilinux-rolling](https://github.com/buluma/docker-molecule-images/actions/workflows/kalilinux.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/kalilinux.yml)
+[![oraclelinux-7](https://github.com/buluma/docker-molecule-images/actions/workflows/oraclelinux7.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/oraclelinux7.yml)
+[![oraclelinux-8](https://github.com/buluma/docker-molecule-images/actions/workflows/oraclelinux8.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/oraclelinux8.yml)
+[![oraclelinux-9](https://github.com/buluma/docker-molecule-images/actions/workflows/oraclelinux9.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/oraclelinux9.yml)
+[![oraclelinux-7](https://github.com/buluma/docker-molecule-images/actions/workflows/oraclelinux7.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/oraclelinux7.yml)
+[![oraclelinux-8](https://github.com/buluma/docker-molecule-images/actions/workflows/oraclelinux8.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/oraclelinux8.yml)
+[![oraclelinux-9](https://github.com/buluma/docker-molecule-images/actions/workflows/oraclelinux9.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/oraclelinux9.yml)
+[![rockylinux-8](https://github.com/buluma/docker-molecule-images/actions/workflows/rockylinux8.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/rockylinux8.yml)
+[![rockylinux-9](https://github.com/buluma/docker-molecule-images/actions/workflows/rockylinux9.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/rockylinux9.yml)
+[![ubuntu-20.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2004.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2004.yml)
+[![ubuntu-23.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2304.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2304.yml)
+[![ubuntu-24.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2404.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2404.yml)
