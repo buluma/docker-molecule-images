@@ -23,6 +23,7 @@ Docker Molecule Images for Testing Ansible Roles.
 [![fedora38](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora38.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora38.yml)
 [![fedora39](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora39.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora39.yml)
 [![fedora40](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora40.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora40.yml)
+[![fedora41](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora41.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora41.yml)
 
 ### Kalilinux
 [![kalilinux-rolling](https://github.com/buluma/docker-molecule-images/actions/workflows/kalilinux.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/kalilinux.yml)
@@ -41,4 +42,3 @@ Docker Molecule Images for Testing Ansible Roles.
 [![ubuntu-20.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2004.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2004.yml)
 [![ubuntu-22.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2204.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2204.yml)
 [![ubuntu-23.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2304.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2304.yml)
-[![ubuntu-24.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2404.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2404.yml)
