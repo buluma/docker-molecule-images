@@ -1,4 +1,4 @@
-FROM debian:buster
+FROM debian:buster-20240311
 
 LABEL maintainer="buluma"
 LABEL build_date="2024-03-24"
