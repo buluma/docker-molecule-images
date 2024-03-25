@@ -4,7 +4,7 @@ LABEL build_date="2024-03-25"
 
 ENV container=docker
 
-RUN dnf update -y && dnf -y reinstall systemd && dnf -y install sudo
+RUN yum -y reinstall systemd
 RUN cd /etc/systemd/system/sysinit.target.wants/ ; \
     for i in * ; do [ $i = systemd-tmpfiles-setup.service ] || rm -f $i ; done ; \
     rm -f /lib/systemd/system/multi-user.target.wants/* ; \
