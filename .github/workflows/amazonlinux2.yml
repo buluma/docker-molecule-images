@@ -1,12 +1,12 @@
 ---
-name: oraclelinux-9
+name: amazonlinux-2
 
 on:
   pull_request:
   push:
     paths:
-      - 'oraclelinux9/**'
-      - '.github/workflows/oraclelinux9.yml'
+      - 'amazonlinux2/**'
+      - '.github/workflows/amazonlinux2.yml'
   schedule:
     - cron: '10 6,15 * * 1,6'
   workflow_dispatch:
@@ -16,7 +16,7 @@ permissions: write-all
 jobs:
   # Test the image builds and works correctly.
   test:
-    name: Test oraclelinux9
+    name: Test amazonlinux2
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -26,10 +26,10 @@ jobs:
       - uses: actions/checkout@v4.1.1
 
       - name: Test building image.
-        run: cd oraclelinux9 && docker build -t oraclelinux9 .
+        run: cd amazonlinux2 && docker build -t amazonlinux2 .
 
       - name: Run the built image.
-        run: docker run --name test-container -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro oraclelinux9
+        run: docker run --name test-container -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro amazonlinux2
 
   # If on master branch, build and release image.
   release:
@@ -59,9 +59,9 @@ jobs:
       - name: Build and push image.
         uses: docker/build-push-action@v5.3.0
         with:
-          context: oraclelinux9/
-          file: oraclelinux9/Dockerfile
-          platforms: linux/amd64, linux/arm64, linux/arm64/v8
+          context: amazonlinux2/
+          file: amazonlinux2/Dockerfile
+          platforms: linux/amd64, linux/arm64, linux/386, linux/arm/v7
           push: true
           tags: |
-            ${{ github.repository }}:oraclelinux9
+            ${{ github.repository }}:amazonlinux2

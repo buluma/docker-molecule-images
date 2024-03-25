@@ -61,7 +61,7 @@ jobs:
         with:
           context: kalilinux/
           file: kalilinux/Dockerfile
-          platforms: linux/amd64, linux/arm64
+          platforms: linux/amd64, linux/arm64, linux/386, linux/arm/v7
           push: true
           tags: |
             ${{ github.repository }}:kalilinux
