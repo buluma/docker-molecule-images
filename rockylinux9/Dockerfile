@@ -30,14 +30,12 @@ RUN yum -y install rpm dnf-plugins-core \
       python3-pyyaml \
  && yum clean all
 
- # Upgrade packages.
- RUN yum -y update \
-  && yum clean all
-
 COPY requirements.txt ./
 RUN pip install -r requirements.txt
 
-RUN pip install setuptools==69.2.0
+# Upgrade packages.
+RUN yum -y update \
+ && yum clean all
 
 VOLUME ["/sys/fs/cgroup"]
 CMD ["/usr/lib/systemd/systemd"]
