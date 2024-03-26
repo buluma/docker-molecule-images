@@ -1,5 +1,5 @@
 # FROM archlinux:latest
-FROM archlinuxarm:latest
+FROM menci/archlinuxarm:latest
 
 LABEL maintainer="buluma"
 LABEL build_date="2024-03-25"
