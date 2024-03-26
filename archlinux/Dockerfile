@@ -1,4 +1,5 @@
-FROM archlinux:latest
+# FROM archlinux:latest
+FROM archlinuxarm:latest
 
 LABEL maintainer="buluma"
 LABEL build_date="2024-03-25"
