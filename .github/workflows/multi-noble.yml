@@ -7,6 +7,7 @@ on:
     paths:
       - ubuntu2404/**
       - '.github/workflows/debian11.yml'
+  workflow_dispatch:
 
 env:
   DOCKER_USER: buluma
