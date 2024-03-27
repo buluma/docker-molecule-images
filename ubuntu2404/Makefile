@@ -1,4 +1,4 @@
-IMG ?= jupyter-web-app
+IMG ?= ${{ github.repository }}
 TAG ?= $(shell git describe --tags --always --dirty)
 DOCKERFILE ?= ubuntu2404/Dockerfile
 ARCH ?= linux/amd64

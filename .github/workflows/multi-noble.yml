@@ -11,7 +11,7 @@ on:
 
 env:
   DOCKER_USER: buluma
-  IMG: ${{ github.repository }}:ubuntu2404
+  IMG: ${{ github.repository }}
   ARCH: linux/amd64,linux/arm64,linux/arm64/v8
 
 jobs:
