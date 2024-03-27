@@ -1,7 +1,8 @@
+# syntax=docker/dockerfile:1
 FROM ubuntu:noble
 
 LABEL maintainer="Michael Buluma"
-LABEL build_date="2024-03-24"
+LABEL build_date="2024-03-27"
 
 LABEL org.opencontainers.image.title="Docker Ubuntu Noble Systemd" \
       org.opencontainers.image.description="Ubuntu Container for Ansible Tests." \
