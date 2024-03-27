@@ -3,7 +3,11 @@ FROM ubuntu:24.04
 LABEL maintainer="Michael Buluma"
 LABEL build_date="2024-03-24"
 
-ARG DEBIAN_FRONTEND=noninteractive
+LABEL org.opencontainers.image.title="Docker Ubuntu Noble Systemd" \
+      org.opencontainers.image.description="Ubuntu Container for Ansible Tests." \
+      org.opencontainers.image.url="https://github.com/buluma/docker-molecule-images/" \
+      org.opencontainers.image.source="https://github.com/buluma/docker-molecule-images" \
+      org.opencontainers.image.licenses="Apache-2.0"
 
 ENV container docker
 
@@ -26,18 +30,6 @@ RUN apt-get update ; \
     rm -f /lib/systemd/system/anaconda.target.wants/* ; \
     rm -f /lib/systemd/system/plymouth* ; \
     rm -f /lib/systemd/system/systemd-update-utmp*
-
-# Install requirements.
-RUN apt-get update \
-    && apt-get dist-upgrade -y \
-    && apt-get install -y \
-    python3 \
-    sudo \
-    gnupg \
-    python3-apt \
-    apt-transport-https \
-    ca-certificates \
-    && apt-get clean
 
 VOLUME [ "/sys/fs/cgroup" ]
 
