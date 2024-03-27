@@ -61,6 +61,6 @@ jobs:
       id: version
       # if: steps.filter.outputs.version == 'true'
       run: |
-        export TAG=$(cat releasing/version/VERSION)
+        export TAG=ubuntu2404
         cd ubuntu2404
         make docker-build-push-multi-arch
