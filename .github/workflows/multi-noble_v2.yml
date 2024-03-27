@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 env:
-  REGISTRY_IMAGE: ${{ github.repository }}:ubuntu2404_arm
+  REGISTRY_IMAGE: buluma/multi_arch_sample:latest
 
 jobs:
   build:
