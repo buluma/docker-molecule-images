@@ -6,7 +6,7 @@ on:
       - v*-branch
     paths:
       - ubuntu2404/**
-      - '.github/workflows/debian11.yml'
+      - '.github/workflows/multi-noble.yml'
   workflow_dispatch:
 
 env:

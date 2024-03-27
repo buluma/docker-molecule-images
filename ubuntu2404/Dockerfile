@@ -1,4 +1,4 @@
-FROM ubuntu:24.04
+FROM ubuntu:noble
 
 LABEL maintainer="Michael Buluma"
 LABEL build_date="2024-03-24"
