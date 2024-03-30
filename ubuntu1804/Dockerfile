@@ -19,7 +19,7 @@ RUN sed -i 's/# deb/deb/g' /etc/apt/sources.list
 
 # Enable systemd.
 RUN apt-get update ; \
-    apt-get install -y systemd systemd-sysv ; \
+    apt-get install -y systemd systemd-sysv sudo ; \
     apt-get clean ; \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* ; \
     cd /lib/systemd/system/sysinit.target.wants/ ; \
@@ -34,18 +34,8 @@ RUN apt-get update ; \
     rm -f /lib/systemd/system/plymouth* ; \
     rm -f /lib/systemd/system/systemd-update-utmp*
 
-# Install requirements.
-RUN apt-get update \
-    && apt-get dist-upgrade -y \
-    && apt-get install -y \
-    python3 \
-    sudo \
-    gnupg \
-    python3-apt \
-    apt-transport-https \
-    ca-certificates \
-    && apt-get clean
-
 VOLUME [ "/sys/fs/cgroup" ]
 
 CMD ["/lib/systemd/systemd"]
+
+CMD tail -f /dev/null
