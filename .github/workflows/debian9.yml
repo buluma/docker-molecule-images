@@ -1,5 +1,5 @@
 ---
-name: deb-bullseye
+name: deb-stretch
 
 on:
   pull_request:
@@ -88,7 +88,7 @@ jobs:
           platforms: linux/amd64, linux/arm64, linux/386, linux/arm/v7, linux/arm64/v8
           push: ${{ github.event_name != 'pull_request' }}
           tags: |
-            ${{ github.repository }}:debian9, ${{ github.repository }}:bullseye
+            ${{ github.repository }}:debian9, ${{ github.repository }}:stretch
           labels: ${{ steps.meta.outputs.labels }}
 
       - name: Docker Scout
