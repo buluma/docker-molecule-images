@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM buluma/debian:buster
+FROM debian:buster
 
 LABEL maintainer="buluma"
 LABEL build_date="2024-03-27"
