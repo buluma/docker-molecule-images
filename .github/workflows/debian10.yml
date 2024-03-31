@@ -1,5 +1,5 @@
 ---
-name: debian10
+name: deb-buster
 
 on:
   pull_request:
@@ -93,7 +93,7 @@ jobs:
 
       - name: Docker Scout
         id: docker-scout
-        if: ${{ github.event_name == 'pull_request' }}
+        if: ${{ github.event_name == 'push' || github.event_name == 'pull_request' }}
         uses: docker/scout-action@v1.6.3
         with:
           command: quickview,cves,recommendations,sbom,environment

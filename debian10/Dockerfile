@@ -4,7 +4,7 @@ FROM debian:buster
 LABEL maintainer="buluma"
 LABEL build_date="2024-03-31"
 
-LABEL org.opencontainers.image.title="Docker Ubuntu Noble Systemd" \
+LABEL org.opencontainers.image.title="Docker Debian Buster Systemd" \
       org.opencontainers.image.description="Ubuntu Container for Ansible Tests." \
       org.opencontainers.image.url="https://github.com/buluma/docker-molecule-images/" \
       org.opencontainers.image.source="https://github.com/buluma/docker-molecule-images" \
