@@ -1,5 +1,5 @@
 ---
-name: debian9
+name: deb-bullseye
 
 on:
   pull_request:
@@ -85,15 +85,15 @@ jobs:
           sbom: true
           provenance: mode=max
           file: debian9/Dockerfile
-          platforms: linux/amd64, linux/arm64, linux/386, linux/arm/v7
+          platforms: linux/amd64, linux/arm64, linux/386, linux/arm/v7, linux/arm64/v8
           push: ${{ github.event_name != 'pull_request' }}
           tags: |
-            ${{ github.repository }}:debian9
+            ${{ github.repository }}:debian9, ${{ github.repository }}:bullseye
           labels: ${{ steps.meta.outputs.labels }}
 
       - name: Docker Scout
         id: docker-scout
-        if: ${{ github.event_name == 'pull_request' }}
+        if: ${{ github.event_name == 'push' || github.event_name == 'pull_request' }}
         uses: docker/scout-action@v1.6.3
         with:
           command: quickview,cves,recommendations,sbom,environment
