@@ -18,7 +18,7 @@ ENV pip_packages "ansible cryptography"
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
        build-essential wget libffi-dev libssl-dev procps \
-       python3-pip python3-dev python3-setuptools python3-wheel python3-apt \
+       python3-pip python3-dev python3-setuptools python3-wheel python3-apt python3-cryptography \
     && rm -rf /var/lib/apt/lists/* \
     && rm -Rf /usr/share/doc && rm -Rf /usr/share/man \
     && apt-get clean
@@ -35,6 +35,9 @@ RUN apt-get update ; \
     rm -rf /lib/systemd/system/sockets.target.wants/*initctl* ; \
     rm -rf /lib/systemd/system/sysinit.target.wants/systemd-tmpfiles-setup* ; \
     rm -rf /lib/systemd/system/systemd-update-utmp*
+
+# Install cryptography
+RUN pip3 install cryptography
 
 # Upgrade pip to latest version.
 RUN pip3 install --upgrade pip
