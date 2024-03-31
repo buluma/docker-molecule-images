@@ -11,6 +11,9 @@ LABEL org.opencontainers.image.licenses="Apache-2.0"
 
 ARG DEBIAN_FRONTEND=noninteractive
 
+# Enable apt repositories.
+RUN sed -i 's/# deb/deb/g' /etc/apt/sources.list
+
 # Install dependencies.
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential wget libffi-dev libssl-dev procps gnupg \
