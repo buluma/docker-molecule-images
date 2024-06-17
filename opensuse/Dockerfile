@@ -1,11 +1,11 @@
 FROM opensuse/leap
 
 LABEL maintainer="Michael Buluma <bulumaknight@gmail.com>"
-LABEL build_date="2023-03-25"
+LABEL build_date="2023-06-17"
 
 ENV container=docker
 
-RUN zypper install -y dbus-1 systemd-sysvinit && \
+RUN zypper install -y dbus-1 systemd-sysvinit sudo && \
     cd /usr/lib/systemd/system/sysinit.target.wants/; \
     for i in *; do [ $i = systemd-tmpfiles-setup.service ] || rm -f $i; done ; \
     rm -f /usr/lib/systemd/system/multi-user.target.wants/* ; \
