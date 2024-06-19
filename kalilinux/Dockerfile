@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 FROM kalilinux/kali-rolling
 LABEL maintainer="Michael Buluma"
-LABEL build_date="2024-03-27"
+LABEL build_date="2024-06-19"
 
 LABEL org.opencontainers.image.title="Docker Ubuntu Noble Systemd" \
       org.opencontainers.image.description="Ubuntu Container for Ansible Tests." \

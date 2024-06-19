@@ -2,7 +2,7 @@
 FROM fedora:40
 
 LABEL maintainer="Michael Buluma"
-LABEL build_date="2024-03-27"
+LABEL build_date="2024-06-19"
 
 LABEL org.opencontainers.image.title="Docker Ubuntu Noble Systemd" \
       org.opencontainers.image.description="Ubuntu Container for Ansible Tests." \
@@ -13,7 +13,7 @@ LABEL org.opencontainers.image.title="Docker Ubuntu Noble Systemd" \
 ENV container=docker
 
 # Enable systemd.
-RUN dnf -y install systemd python3-libdnf5 && dnf clean all && \
+RUN dnf -y install systemd python3-libdnf5 python3-libdnf5-cli && dnf clean all && \
   (cd /lib/systemd/system/sysinit.target.wants/ ; for i in * ; do [ $i == systemd-tmpfiles-setup.service ] || rm -f $i ; done) ; \
   rm -f /lib/systemd/system/multi-user.target.wants/* ;\
   rm -f /etc/systemd/system/*.wants/* ;\
