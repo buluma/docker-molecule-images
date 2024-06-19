@@ -6,7 +6,7 @@ LABEL build_date="2024-03-25"
 ENV container=docker
 
 # Enable systemd.
-RUN dnf -y install systemd && dnf clean all && \
+RUN dnf -y install systemd python3-libdnf5 && dnf clean all && \
   (cd /lib/systemd/system/sysinit.target.wants/ ; for i in * ; do [ $i == systemd-tmpfiles-setup.service ] || rm -f $i ; done) ; \
   rm -f /lib/systemd/system/multi-user.target.wants/* ;\
   rm -f /etc/systemd/system/*.wants/* ;\
