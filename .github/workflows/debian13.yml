@@ -91,15 +91,15 @@ jobs:
             ${{ github.repository }}:debian13, ${{ github.repository }}:trixie, ${{ github.repository }}:debian_latest
           labels: ${{ steps.meta.outputs.labels }}
 
-      - name: Docker Scout
-        id: docker-scout
-        if: ${{ github.event_name == 'push' || github.event_name == 'pull_request' }}
-        uses: docker/scout-action@v1.18.2
-        with:
-          command: quickview,cves,recommendations,sbom,environment
-          image: ${{ steps.meta.outputs.tags }}
-          environment: prod
-          organization: shadownet
-          only-severities: critical,high,medium
-          exit-code: true
-          only-fixed: true
+      # - name: Docker Scout
+      #   id: docker-scout
+      #   if: ${{ github.event_name == 'push' || github.event_name == 'pull_request' }}
+      #   uses: docker/scout-action@v1.18.2
+      #   with:
+      #     command: quickview,cves,recommendations,sbom,environment
+      #     image: ${{ steps.meta.outputs.tags }}
+      #     environment: prod
+      #     organization: shadownet
+      #     only-severities: critical,high,medium
+      #     exit-code: true
+      #     only-fixed: true
