@@ -95,6 +95,8 @@ jobs:
         if: ${{ github.event_name == 'pull_request' }}
         uses: docker/scout-action@v1.18.2
         with:
+          dockerhub-user: ${{ secrets.DOCKERHUB_USERNAME }}
+          dockerhub-password: ${{ secrets.DOCKERHUB_TOKEN }}
           command: quickview,cves,recommendations,sbom,environment
           image: ${{ steps.meta.outputs.tags }}
           environment: prod
@@ -102,3 +104,6 @@ jobs:
           only-severities: critical,high,medium
           exit-code: true
           only-fixed: true
+        env:
+          DOCKER_HUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+          DOCKER_HUB_PASSWORD: ${{ secrets.DOCKERHUB_TOKEN }}
