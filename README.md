@@ -184,6 +184,8 @@ docker run -it --rm --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw ghcr.io/bul
 
 - ✅ **Multi-Architecture Support**: Images built for multiple architectures (amd64, arm64, arm/v6, arm/v7, ppc64le, s390x, 386)
 - ✅ **Proper Init Systems**: Each distribution configured with appropriate init system for service testing
+- ✅ **Security Scanning**: Integrated with Docker Scout for automated vulnerability assessments
+- ✅ **Mandatory Verification**: All releases are verified via CI tests before deployment
 - ✅ **Consistent Interface**: Uniform configuration approach across all distributions
 - ✅ **Regular Updates**: Automated builds with Renovate bot for keeping base images current
 - ✅ **CI/CD Ready**: Optimized for use in continuous integration pipelines
