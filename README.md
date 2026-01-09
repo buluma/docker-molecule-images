@@ -21,6 +21,7 @@ This project provides ready-to-use Docker images for numerous Linux distribution
 
 ### CentOS
 - [centos7](centos7/) - CentOS 7 with systemd ⚠️ *(Deprecated - EOL June 2024)*
+- [centos-stream9](centos-stream9/) - CentOS Stream 9 with systemd
 
 ### Debian
 - [debian9](debian9/) - Debian 9 (Stretch) with systemd ⚠️ *(Deprecated - EOL June 2022)*
@@ -35,6 +36,8 @@ This project provides ready-to-use Docker images for numerous Linux distribution
 - [fedora39](fedora39/) - Fedora 39 with systemd ⚠️ *(Deprecated - EOL November 2024)*
 - [fedora40](fedora40/) - Fedora 40 with systemd
 - [fedora41](fedora41/) - Fedora 41 with systemd
+- [fedora42](fedora42/) - Fedora 42 with systemd
+- [fedora43](fedora43/) - Fedora 43 with systemd
 
 ### Kali Linux
 - [kalilinux](kalilinux/) - Kali Linux rolling with systemd
@@ -58,7 +61,9 @@ This project provides ready-to-use Docker images for numerous Linux distribution
 - [ubuntu2204](ubuntu2204/) - Ubuntu 22.04 (Jammy) with systemd
 - [ubuntu2304](ubuntu2304/) - Ubuntu 23.04 (Lunar) with systemd
 - [ubuntu2404](ubuntu2404/) - Ubuntu 24.04 (Noble) with systemd
-- [ubuntu2504](ubuntu2504/) - Ubuntu 25.04 (Oracular) with systemd
+- [ubuntu2410](ubuntu2410/) - Ubuntu 24.10 (Oracular) with systemd
+- [ubuntu2504](ubuntu2504/) - Ubuntu 25.04 (Plucky) with systemd
+- [ubuntu2510](ubuntu2510/) - Ubuntu 25.10 with systemd
 
 ## Usage
 
@@ -109,6 +114,7 @@ docker run -it --rm --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw ghcr.io/bul
 
 ### Centos
 [![centos-7](https://github.com/buluma/docker-molecule-images/actions/workflows/centos7.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/centos7.yml)
+[![centos-stream9](https://github.com/buluma/docker-molecule-images/actions/workflows/centos-stream9.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/centos-stream9.yml)
 
 ### Debian
 [![debian9](https://github.com/buluma/docker-molecule-images/actions/workflows/debian9.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/debian9.yml)
@@ -123,6 +129,8 @@ docker run -it --rm --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw ghcr.io/bul
 [![fedora39](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora39.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora39.yml)
 [![fedora40](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora40.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora40.yml)
 [![fedora41](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora41.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora41.yml)
+[![fedora42](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora42.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora42.yml)
+[![fedora43](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora43.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora43.yml)
 
 ### Kalilinux
 [![kalilinux-rolling](https://github.com/buluma/docker-molecule-images/actions/workflows/kalilinux.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/kalilinux.yml)
@@ -146,7 +154,9 @@ docker run -it --rm --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw ghcr.io/bul
 [![ubuntu-22.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2204.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2204.yml)
 [![ubuntu-23.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2304.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2304.yml)
 [![ubuntu-24.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2404.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2404.yml)
+[![ubuntu-24.10](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2410.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2410.yml)
 [![ubuntu-25.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2504.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2504.yml)
+[![ubuntu-25.10](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2510.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2510.yml)
 
 ## Features
 
