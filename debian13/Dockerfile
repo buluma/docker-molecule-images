@@ -10,7 +10,7 @@ LABEL org.opencontainers.image.title="Docker Debian Trixie Systemd" \
       org.opencontainers.image.source="https://github.com/buluma/docker-molecule-images" \
       org.opencontainers.image.licenses="Apache-2.0"
 
-ENV container docker
+ENV container=docker
 ENV DEBIAN_FRONTEND noninteractive
 
 # Enable systemd.

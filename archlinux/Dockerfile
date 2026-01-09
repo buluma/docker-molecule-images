@@ -4,7 +4,7 @@ FROM archlinux:latest
 LABEL maintainer="buluma"
 LABEL build_date="2024-03-25"
 
-ENV container docker
+ENV container=docker
 
 # Clean services
 RUN pacman -Sy --noconfirm systemd-sysvcompat && \

@@ -12,7 +12,7 @@ LABEL org.opencontainers.image.title="Docker Ubuntu Noble Systemd" \
 
 ARG DEBIAN_FRONTEND=noninteractive
 
-ENV container docker
+ENV container=docker
 
 # Enable apt repositories.
 RUN sed -i 's/# deb/deb/g' /etc/apt/sources.list

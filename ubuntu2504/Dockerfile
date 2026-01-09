@@ -10,7 +10,7 @@ LABEL org.opencontainers.image.title="Docker Ubuntu Plucky Systemd" \
       org.opencontainers.image.source="https://github.com/buluma/docker-molecule-images" \
       org.opencontainers.image.licenses="Apache-2.0"
 
-ENV container docker
+ENV container=docker
 
 # Enable apt repositories.
 RUN sed -i 's/# deb/deb/g' /etc/apt/sources.list
