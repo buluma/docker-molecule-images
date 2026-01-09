@@ -1,4 +1,4 @@
-FROM rockylinux:10
+FROM rockylinux:latest
 LABEL maintainer="Michael Buluma"
 LABEL build_date="2025-12-01"
 
