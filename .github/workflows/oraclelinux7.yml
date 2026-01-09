@@ -85,7 +85,7 @@ jobs:
           sbom: true
           provenance: mode=max
           file: oraclelinux7/Dockerfile
-          platforms: linux/amd64, linux/arm64, linux/arm64/v8
+          platforms: linux/amd64, linux/arm64
           push: ${{ github.event_name != 'pull_request' }}
           tags: |
             ${{ github.repository }}:oraclelinux7

@@ -65,7 +65,7 @@ jobs:
         with:
           context: ubuntu2304/
           file: ubuntu2304/Dockerfile
-          platforms: linux/amd64, linux/arm64, linux/arm/v7, linux/arm64/v8, linux/ppc64le, linux/s390x
+          platforms: linux/amd64, linux/arm64, linux/arm/v7, linux/ppc64le, linux/s390x
           push: true
           tags: |
             ${{ github.repository }}:ubuntu2304, ${{ github.repository }}:lunar, ${{ github.repository }}:mantic

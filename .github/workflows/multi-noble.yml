@@ -12,7 +12,7 @@ on:
 env:
   DOCKER_USER: buluma
   IMG: ${{ github.repository }}
-  ARCH: linux/amd64,linux/arm64,linux/arm64/v8
+  ARCH: linux/amd64,linux/arm64
 
 jobs:
   push_to_registry:
@@ -47,7 +47,6 @@ jobs:
         cd ubuntu2404
         ARCH=linux/amd64 make docker-build-multi-arch
         ARCH=linux/arm64 make docker-build-multi-arch
-        ARCH=linux/arm64/v8 make docker-build-multi-arch
         make docker-build-push-multi-arch
 
     - name: Build and push latest multi-arch docker image
