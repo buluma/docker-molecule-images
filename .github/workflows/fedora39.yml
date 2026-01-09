@@ -94,7 +94,7 @@ jobs:
       - name: Docker Scout
         id: docker-scout
         if: ${{ github.event_name == 'pull_request' }}
-        uses: docker/scout-action@v1.6.3
+        uses: docker/scout-action@v1.18.2
         with:
           command: quickview,cves,recommendations,sbom,environment
           image: ${{ steps.meta.outputs.tags }}
