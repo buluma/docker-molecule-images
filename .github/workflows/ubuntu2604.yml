@@ -1,0 +1,70 @@
+---
+name: ubuntu2604
+on:
+  schedule:
+    - cron: "10 2 * * 1"
+  push:
+    branches:
+      - master
+    paths:
+      - "ubuntu2604/**"
+      - "!ubuntu2604/README.md"
+  pull_request:
+    branches:
+      - master
+    paths:
+      - "ubuntu2604/**"
+      - "!ubuntu2604/README.md"
+  workflow_dispatch:
+
+env:
+  PLATFORM: linux/amd64
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare
+        run: |
+          echo "PLATFORMS=${PLATFORM}" >> $GITHUB_ENV
+
+      - name: Docker meta
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: |
+            ghcr.io/buluma/ubuntu2604
+          tags: |
+            type=raw,value=latest
+            type=ref,event=branch
+            type=ref,event=pr
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Login to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          context: ./ubuntu2604
+          platforms: ${{ env.PLATFORMS }}
+          labels: ${{ steps.meta.outputs.labels }}
+          push: ${{ github.event_name != 'pull_request' }}
+          tags: ${{ steps.meta.outputs.tags }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Image digest
+        run: echo ${{ steps.build-and-push.outputs.digest }}

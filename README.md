@@ -31,6 +31,7 @@ This project provides ready-to-use Docker images for numerous Linux distribution
 - [debian9](debian9/) - Debian 9 (Stretch) with systemd ⚠️ *(Deprecated - EOL June 2022)*
 
 ### Fedora
+- [fedora44](fedora44/) - Fedora 44 with systemd
 - [fedora43](fedora43/) - Fedora 43 with systemd
 - [fedora42](fedora42/) - Fedora 42 with systemd
 - [fedora41](fedora41/) - Fedora 41 with systemd
@@ -64,9 +65,14 @@ This project provides ready-to-use Docker images for numerous Linux distribution
 
 ### SUSE
 - [sles15](sles15/) - SUSE Linux Enterprise Server 15 with systemd
+- [sles12](sles12/) - SUSE Linux Enterprise Server 12 with systemd
 - [opensuse-tumbleweed](opensuse-tumbleweed/) - openSUSE Tumbleweed with systemd
 
+### Other Distributions
+- [clearlinux](clearlinux/) - Clear Linux with systemd
+
 ### Ubuntu
+- [ubuntu2604](ubuntu2604/) - Ubuntu 26.04 (Provisional) with systemd
 - [ubuntu2510](ubuntu2510/) - Ubuntu 25.10 with systemd
 - [ubuntu2504](ubuntu2504/) - Ubuntu 25.04 (Plucky) with systemd
 - [ubuntu2410](ubuntu2410/) - Ubuntu 24.10 (Oracular) with systemd
@@ -135,6 +141,7 @@ docker run -it --rm --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw ghcr.io/bul
 [![debian9](https://github.com/buluma/docker-molecule-images/actions/workflows/debian9.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/debian9.yml)
 
 ### Fedora
+[![fedora44](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora44.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora44.yml)
 [![fedora43](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora43.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora43.yml)
 [![fedora42](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora42.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora42.yml)
 [![fedora41](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora41.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora41.yml)
@@ -168,9 +175,14 @@ docker run -it --rm --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw ghcr.io/bul
 
 ### SUSE
 [![sles15](https://github.com/buluma/docker-molecule-images/actions/workflows/sles15.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/sles15.yml)
+[![sles12](https://github.com/buluma/docker-molecule-images/actions/workflows/sles12.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/sles12.yml)
 [![opensuse-tumbleweed](https://github.com/buluma/docker-molecule-images/actions/workflows/opensuse-tumbleweed.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/opensuse-tumbleweed.yml)
 
+### Other Distributions
+[![clearlinux](https://github.com/buluma/docker-molecule-images/actions/workflows/clearlinux.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/clearlinux.yml)
+
 ### Ubuntu
+[![ubuntu-26.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2604.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2604.yml)
 [![ubuntu-25.10](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2510.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2510.yml)
 [![ubuntu-25.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2504.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2504.yml)
 [![ubuntu-24.10](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2410.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2410.yml)
