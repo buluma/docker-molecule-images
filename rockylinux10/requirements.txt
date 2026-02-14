@@ -3,4 +3,4 @@ molecule == 6.*
 molecule-plugins[docker] == 23.*
 ansible-lint == 6.*
 paramiko == 3.*
-setuptools==69.2.0
+setuptools==78.1.1
