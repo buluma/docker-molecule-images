@@ -97,8 +97,6 @@ jobs:
         with:
           dockerhub-user: ${{ secrets.DOCKERHUB_USERNAME }}
           dockerhub-password: ${{ secrets.DOCKERHUB_TOKEN }}
-          dockerhub-user: ${{ secrets.DOCKERHUB_USERNAME }}
-          dockerhub-password: ${{ secrets.DOCKERHUB_TOKEN }}
           command: quickview,cves,recommendations,sbom,environment
           image: ${{ steps.meta.outputs.tags }}
           environment: prod
