@@ -99,7 +99,7 @@ jobs:
           dockerhub-user: ${{ secrets.DOCKERHUB_USERNAME }}
           dockerhub-password: ${{ secrets.DOCKERHUB_TOKEN }}
           command: quickview,cves,recommendations,sbom,environment
-          image: ${{ steps.meta.outputs.tags }}
+          image: ${{ github.repository }}:fedora44
           environment: prod
           organization: shadownet
           only-severities: critical,high,medium
