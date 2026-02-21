@@ -88,7 +88,7 @@ jobs:
           platforms: linux/amd64, linux/arm64, linux/ppc64le, linux/s390x
           push: ${{ github.event_name != 'pull_request' }}
           tags: |
-            ${{ github.repository }}:fedora45
+            ${{ github.repository }}:fedora45, ${{ github.repository }}:rawhide
           labels: ${{ steps.meta.outputs.labels }}
 
       - name: Docker Scout

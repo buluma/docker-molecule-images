@@ -87,20 +87,5 @@ jobs:
           platforms: linux/amd64, linux/arm64, linux/ppc64le, linux/s390x
           push: ${{ github.event_name != 'pull_request' }}
           tags: |
-            ${{ github.repository }}:fedora39, ${{ github.repository }}:fedora_latest, ${{ github.repository }}:39
+            ${{ github.repository }}:fedora39
           labels: ${{ steps.meta.outputs.labels }}
-
-      - name: Docker Scout
-        id: docker-scout
-        if: ${{ github.event_name == 'pull_request' }}
-        uses: docker/scout-action@v1.18.2
-        with:
-          dockerhub-user: ${{ secrets.DOCKERHUB_USERNAME }}
-          dockerhub-password: ${{ secrets.DOCKERHUB_TOKEN }}
-          command: quickview,cves,recommendations,sbom,environment
-          image: ${{ steps.meta.outputs.tags }}
-          environment: prod
-          organization: shadownet
-          only-severities: critical,high,medium
-          exit-code: true
-          only-fixed: true

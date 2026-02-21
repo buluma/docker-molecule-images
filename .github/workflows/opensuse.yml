@@ -89,18 +89,3 @@ jobs:
           tags: |
             ${{ github.repository }}:opensuse, ${{ github.repository }}:opensuse_latest
           labels: ${{ steps.meta.outputs.labels }}
-
-      - name: Docker Scout
-        id: docker-scout
-        if: ${{ github.event_name == 'pull_request' }}
-        uses: docker/scout-action@v1.18.2
-        with:
-          dockerhub-user: ${{ secrets.DOCKERHUB_USERNAME }}
-          dockerhub-password: ${{ secrets.DOCKERHUB_TOKEN }}
-          command: quickview,cves,recommendations,sbom,environment
-          image: ${{ steps.meta.outputs.tags }}
-          environment: prod
-          organization: shadownet
-          only-severities: critical,high,medium
-          exit-code: true
-          only-fixed: true
