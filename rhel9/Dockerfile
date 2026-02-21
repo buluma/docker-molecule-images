@@ -11,11 +11,16 @@ LABEL org.opencontainers.image.title="Docker RHEL 9 Systemd" \
       org.opencontainers.image.licenses="Apache-2.0"
 
 ENV container=docker
-ENV DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 
 # Enable systemd.
-RUN microdnf install -y systemd systemd-sysv && \
-    microdnf clean all && \
+RUN if command -v microdnf >/dev/null 2>&1; then \
+      microdnf install -y systemd systemd-sysv && microdnf clean all; \
+    elif command -v dnf >/dev/null 2>&1; then \
+      dnf install -y systemd systemd-sysv && dnf clean all; \
+    else \
+      yum install -y systemd systemd-sysv && yum clean all; \
+    fi && \
     rm -rf /var/cache/dnf && \
     rm -rf /lib/systemd/system/multi-user.target.wants/* && \
     rm -rf /etc/systemd/system/*.wants/* && \
