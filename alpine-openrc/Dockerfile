@@ -28,8 +28,12 @@ RUN apk add --update --no-cache openrc && \
       /etc/init.d/modules \
       /etc/init.d/modules-load \
       /etc/init.d/modloop && \
-    sed -i 's/cgroup_add_service /# cgroup_add_service /g' /lib/rc/sh/openrc-run.sh && \
-    sed -i 's/VSERVER/DOCKER/Ig' /lib/rc/sh/init.sh
+    for f in /lib/rc/sh/openrc-run.sh /usr/lib/rc/sh/openrc-run.sh; do \
+      [ -f "$f" ] && sed -i 's/cgroup_add_service /# cgroup_add_service /g' "$f"; \
+    done && \
+    for f in /lib/rc/sh/init.sh /usr/lib/rc/sh/init.sh; do \
+      [ -f "$f" ] && sed -i 's/VSERVER/DOCKER/Ig' "$f"; \
+    done
 
 VOLUME ["/sys/fs/cgroup"]
 
