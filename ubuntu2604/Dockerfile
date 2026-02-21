@@ -10,11 +10,11 @@ LABEL org.opencontainers.image.licenses="Apache-2.0"
 LABEL buluma.role-name="docker-molecule-images"
 
 ENV container=docker
-ENV DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 
 # Enable systemd.
 RUN apt-get update && \
-    apt-get install -y systemd python3 python3-pip sudo which shadow-utils && \
+    apt-get install -y systemd python3 python3-pip sudo which passwd && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
     cd /lib/systemd/system/sysinit.target.wants/ && \
