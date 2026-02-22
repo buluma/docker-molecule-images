@@ -127,18 +127,18 @@ docker run -it --rm --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw ghcr.io/bul
 ### Amazonlinux
 [![amazonlinux-2023](https://github.com/buluma/docker-molecule-images/actions/workflows/amazonlinux2023.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/amazonlinux2023.yml)
 [![amazonlinux-2](https://github.com/buluma/docker-molecule-images/actions/workflows/amazonlinux2.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/amazonlinux2.yml)
-[![amazonlinux-1](https://github.com/buluma/docker-molecule-images/actions/workflows/amazonlinux1.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/amazonlinux1.yml)
+
 
 ### Centos
 [![centos-stream9](https://github.com/buluma/docker-molecule-images/actions/workflows/centos-stream9.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/centos-stream9.yml)
-[![centos-7](https://github.com/buluma/docker-molecule-images/actions/workflows/centos7.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/centos7.yml)
+
 
 ### Debian
 [![debian13](https://github.com/buluma/docker-molecule-images/actions/workflows/debian13.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/debian13.yml)
 [![debian12](https://github.com/buluma/docker-molecule-images/actions/workflows/debian12.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/debian12.yml)
 [![debian11](https://github.com/buluma/docker-molecule-images/actions/workflows/debian11.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/debian11.yml)
-[![debian10](https://github.com/buluma/docker-molecule-images/actions/workflows/debian10.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/debian10.yml)
-[![debian9](https://github.com/buluma/docker-molecule-images/actions/workflows/debian9.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/debian9.yml)
+
+
 
 ### Fedora
 [![fedora44](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora44.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora44.yml)
@@ -146,9 +146,9 @@ docker run -it --rm --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw ghcr.io/bul
 [![fedora42](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora42.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora42.yml)
 [![fedora41](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora41.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora41.yml)
 [![fedora40](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora40.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora40.yml)
-[![fedora39](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora39.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora39.yml)
-[![fedora38](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora38.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora38.yml)
-[![fedora37](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora37.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora37.yml)
+
+
+
 
 ### Kalilinux
 [![kalilinux-rolling](https://github.com/buluma/docker-molecule-images/actions/workflows/kalilinux.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/kalilinux.yml)
@@ -159,12 +159,12 @@ docker run -it --rm --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw ghcr.io/bul
 ### Oraclelinux
 [![oraclelinux-9](https://github.com/buluma/docker-molecule-images/actions/workflows/oraclelinux9.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/oraclelinux9.yml)
 [![oraclelinux-8](https://github.com/buluma/docker-molecule-images/actions/workflows/oraclelinux8.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/oraclelinux8.yml)
-[![oraclelinux-7](https://github.com/buluma/docker-molecule-images/actions/workflows/oraclelinux7.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/oraclelinux7.yml)
+
 
 ### Rockylinux
 [![rockylinux-10](https://github.com/buluma/docker-molecule-images/actions/workflows/rockylinux10.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/rockylinux10.yml)
 [![rockylinux-9](https://github.com/buluma/docker-molecule-images/actions/workflows/rockylinux9.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/rockylinux9.yml)
-[![rockylinux-8](https://github.com/buluma/docker-molecule-images/actions/workflows/rockylinux8.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/rockylinux8.yml)
+
 
 ### AlmaLinux
 [![almalinux10](https://github.com/buluma/docker-molecule-images/actions/workflows/almalinux10.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/almalinux10.yml)
@@ -189,8 +189,8 @@ docker run -it --rm --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw ghcr.io/bul
 [![ubuntu-24.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2404.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2404.yml)
 [![ubuntu-23.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2304.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2304.yml)
 [![ubuntu-22.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2204.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2204.yml)
-[![ubuntu-20.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2004.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2004.yml)
-[![ubuntu-18.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu1804.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu1804.yml)
+
+
 
 ## Features
 
