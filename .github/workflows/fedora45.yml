@@ -79,7 +79,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and push image.
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v7
         with:
           context: fedora45/
           sbom: true
@@ -94,7 +94,7 @@ jobs:
       - name: Docker Scout
         id: docker-scout
         if: ${{ github.event_name == 'push' || github.event_name == 'pull_request' }}
-        uses: docker/scout-action@v1.18.2
+        uses: docker/scout-action@v1.21.0
         with:
           dockerhub-user: ${{ secrets.DOCKERHUB_USERNAME }}
           dockerhub-password: ${{ secrets.DOCKERHUB_TOKEN }}
