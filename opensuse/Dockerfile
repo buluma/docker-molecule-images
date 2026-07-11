@@ -1,4 +1,4 @@
-FROM opensuse/leap
+FROM opensuse/leap:15.6
 
 LABEL maintainer="Michael Buluma <bulumaknight@gmail.com>"
 LABEL build_date="2023-06-17"
