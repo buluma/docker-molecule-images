@@ -31,6 +31,7 @@ This project provides ready-to-use Docker images for numerous Linux distribution
 - [debian9](debian9/) - Debian 9 (Stretch) with systemd ⚠️ *(Deprecated - EOL June 2022)*
 
 ### Fedora
+- [fedora45](fedora45/) - Fedora 45 with systemd
 - [fedora44](fedora44/) - Fedora 44 with systemd
 - [fedora43](fedora43/) - Fedora 43 with systemd
 - [fedora42](fedora42/) - Fedora 42 with systemd
@@ -141,6 +142,7 @@ docker run -it --rm --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw ghcr.io/bul
 
 
 ### Fedora
+[![fedora45](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora45.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora45.yml)
 [![fedora44](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora44.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora44.yml)
 [![fedora43](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora43.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora43.yml)
 [![fedora42](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora42.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora42.yml)
