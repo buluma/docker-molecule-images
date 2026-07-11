@@ -9,32 +9,32 @@ This project provides ready-to-use Docker images for numerous Linux distribution
 ## Available Distributions
 
 ### Alpine Linux
-- [alpine-openrc](alpine-openrc/) - Alpine Linux with OpenRC init system
+- [alpine-openrc](alpine-openrc/) - Alpine Linux with OpenRC init system (Rolling release)
 
 ### Amazon Linux
-- [amazonlinux2023](amazonlinux2023/) - Amazon Linux 2023 with systemd
+- [amazonlinux2023](amazonlinux2023/) - Amazon Linux 2023 with systemd (EOL: 2028)
 - [amazonlinux2](amazonlinux2/) - Amazon Linux 2 with systemd ⚠️ *(Deprecated - EOL June 2025)*
 - [amazonlinux1](amazonlinux1/) - Amazon Linux 1 with upstart ⚠️ *(Deprecated - EOL July 2023)*
 
 ### Arch Linux
-- [archlinux](archlinux/) - Arch Linux with systemd
+- [archlinux](archlinux/) - Arch Linux with systemd (Rolling release)
 
 ### CentOS
-- [centos-stream9](centos-stream9/) - CentOS Stream 9 with systemd
+- [centos-stream9](centos-stream9/) - CentOS Stream 9 with systemd (Rolling)
 - [centos7](centos7/) - CentOS 7 with systemd ⚠️ *(Deprecated - EOL June 2024)*
 
 ### Debian
-- [debian13](debian13/) - Debian 13 (Trixie) with systemd
-- [debian12](debian12/) - Debian 12 (Bookworm) with systemd
-- [debian11](debian11/) - Debian 11 (Bullseye) with systemd
+- [debian13](debian13/) - Debian 13 (Trixie) with systemd (EOL: 2030)
+- [debian12](debian12/) - Debian 12 (Bookworm) with systemd (EOL: 2028)
+- [debian11](debian11/) - Debian 11 (Bullseye) with systemd (EOL: 2026)
 - [debian10](debian10/) - Debian 10 (Buster) with systemd ⚠️ *(Deprecated - EOL June 2024)*
 - [debian9](debian9/) - Debian 9 (Stretch) with systemd ⚠️ *(Deprecated - EOL June 2022)*
 
 ### Fedora
-- [fedora45](fedora45/) - Fedora 45 with systemd
-- [fedora44](fedora44/) - Fedora 44 with systemd
-- [fedora43](fedora43/) - Fedora 43 with systemd
-- [fedora42](fedora42/) - Fedora 42 with systemd
+- [fedora45](fedora45/) - Fedora 45 with systemd (EOL: ~Jan 2026)
+- [fedora44](fedora44/) - Fedora 44 with systemd (EOL: ~Jul 2025)
+- [fedora43](fedora43/) - Fedora 43 with systemd (EOL: ~Jan 2025)
+- [fedora42](fedora42/) - Fedora 42 with systemd (EOL: ~Jul 2024)
 - [fedora41](fedora41/) - Fedora 41 with systemd ⚠️ *(Deprecated - EOL July 2025)*
 - [fedora40](fedora40/) - Fedora 40 with systemd ⚠️ *(Deprecated - EOL January 2025)*
 - [fedora39](fedora39/) - Fedora 39 with systemd ⚠️ *(Deprecated - EOL November 2024)*
@@ -42,44 +42,45 @@ This project provides ready-to-use Docker images for numerous Linux distribution
 - [fedora37](fedora37/) - Fedora 37 with systemd ⚠️ *(Deprecated - EOL November 2023)*
 
 ### Kali Linux
-- [kalilinux](kalilinux/) - Kali Linux rolling with systemd
+- [kalilinux](kalilinux/) - Kali Linux rolling with systemd (Rolling release)
 
 ### OpenSUSE
-- [opensuse156](opensuse156/) - openSUSE Leap 15.6 with systemd
+- [opensuse156](opensuse156/) - openSUSE Leap 15.6 with systemd (EOL: Dec 2026)
 - [opensuse](opensuse/) - OpenSUSE with systemd ⚠️ *(Deprecated - EOL Dec 2024)*
 
 ### Oracle Linux
-- [oraclelinux9](oraclelinux9/) - Oracle Linux 9 with systemd
-- [oraclelinux8](oraclelinux8/) - Oracle Linux 8 with systemd
+- [oraclelinux9](oraclelinux9/) - Oracle Linux 9 with systemd (EOL: 2032)
+- [oraclelinux8](oraclelinux8/) - Oracle Linux 8 with systemd (EOL: 2029)
 - [oraclelinux7](oraclelinux7/) - Oracle Linux 7 with systemd ⚠️ *(Deprecated - EOL June 2024)*
 
 ### Rocky Linux
-- [rockylinux10](rockylinux10/) - Rocky Linux 10 with systemd ⚠️ *(Deprecated - Base image not available)*
-- [rockylinux9](rockylinux9/) - Rocky Linux 9 with systemd
+- [rockylinux9](rockylinux9/) - Rocky Linux 9 with systemd (EOL: 2027)
 - [rockylinux8](rockylinux8/) - Rocky Linux 8 with systemd ⚠️ *(Deprecated - EOL May 2025)*
+- [rockylinux10](rockylinux10/) - Rocky Linux 10 with systemd ⚠️ *(Deprecated - Base image not available)*
 
 ### AlmaLinux
-- [almalinux10](almalinux10/) - AlmaLinux 10 with systemd
-- [almalinux9](almalinux9/) - AlmaLinux 9 with systemd
-- [almalinux8](almalinux8/) - AlmaLinux 8 with systemd
+- [almalinux10](almalinux10/) - AlmaLinux 10 with systemd (EOL: 2033)
+- [almalinux9](almalinux9/) - AlmaLinux 9 with systemd (EOL: 2029)
+- [almalinux8](almalinux8/) - AlmaLinux 8 with systemd (EOL: 2029)
 
 ### RHEL
-- [rhel9](rhel9/) - Red Hat Enterprise Linux 9 with systemd
-- [rhel8-ubi](rhel8-ubi/) - Red Hat Enterprise Linux 8 (UBI) 8 with systemd
+- [rhel9](rhel9/) - Red Hat Enterprise Linux 9 with systemd (EOL: 2032)
+- [rhel8-ubi](rhel8-ubi/) - Red Hat Enterprise Linux 8 (UBI) 8 with systemd (EOL: 2029)
 
 ### SUSE
+- [opensuse156](opensuse156/) - openSUSE Leap 15.6 with systemd (EOL: Dec 2026)
+- [opensuse-tumbleweed](opensuse-tumbleweed/) - openSUSE Tumbleweed with systemd (Rolling)
 - [sles15](sles15/) - SUSE Linux Enterprise Server 15 with systemd ⚠️ *(Deprecated - Auth required, systemd path issue)*
 - [sles12](sles12/) - SUSE Linux Enterprise Server 12 with systemd ⚠️ *(Deprecated - Auth required)*
-- [opensuse-tumbleweed](opensuse-tumbleweed/) - openSUSE Tumbleweed with systemd
 
 ### Ubuntu
-- [ubuntu2604](ubuntu2604/) - Ubuntu 26.04 (Provisional) with systemd
+- [ubuntu2604](ubuntu2604/) - Ubuntu 26.04 (Provisional) with systemd (EOL: 2031)
 - [ubuntu2510](ubuntu2510/) - Ubuntu 25.10 with systemd ⚠️ *(Deprecated - EOL July 2025)*
-- [ubuntu2504](ubuntu2504/) - Ubuntu 25.04 (Plucky) with systemd
+- [ubuntu2504](ubuntu2504/) - Ubuntu 25.04 (Plucky) with systemd (EOL: Jan 2026)
 - [ubuntu2410](ubuntu2410/) - Ubuntu 24.10 (Oracular) with systemd ⚠️ *(Deprecated - EOL July 2025)*
-- [ubuntu2404](ubuntu2404/) - Ubuntu 24.04 (Noble) with systemd
+- [ubuntu2404](ubuntu2404/) - Ubuntu 24.04 (Noble) with systemd (EOL: 2029)
 - [ubuntu2304](ubuntu2304/) - Ubuntu 23.04 (Lunar) with systemd ⚠️ *(Deprecated - EOL Jan 2024)*
-- [ubuntu2204](ubuntu2204/) - Ubuntu 22.04 (Jammy) with systemd
+- [ubuntu2204](ubuntu2204/) - Ubuntu 22.04 (Jammy) with systemd (EOL: 2027)
 - [ubuntu2004](ubuntu2004/) - Ubuntu 20.04 (Focal) with systemd ⚠️ *(Deprecated - EOL April 2025)*
 - [ubuntu1804](ubuntu1804/) - Ubuntu 18.04 (Bionic) with systemd ⚠️ *(Deprecated - EOL April 2023)*
 
