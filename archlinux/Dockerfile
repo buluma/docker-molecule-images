@@ -7,7 +7,7 @@ LABEL build_date="2024-03-25"
 ENV container=docker
 
 # Clean services
-RUN pacman -Sy --noconfirm systemd-sysvcompat && \
+RUN pacman -Sy --noconfirm systemd-sysvcompat sudo && \
   cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i == systemd-tmpfiles-setup.service ] || rm -f $i; done ;\
   rm -f /lib/systemd/system/multi-user.target.wants/*;\
   rm -f /etc/systemd/system/*.wants/*;\

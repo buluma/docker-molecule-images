@@ -15,7 +15,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # Enable systemd.
 RUN zypper refresh && \
-    zypper install -y systemd && \
+    zypper install -y systemd sudo && \
     zypper clean -a && \
     rm -rf /var/cache/zypp && \
     rm -rf /lib/systemd/system/multi-user.target.wants/* && \

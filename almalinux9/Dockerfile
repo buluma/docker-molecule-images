@@ -14,7 +14,7 @@ ENV container=docker
 ENV DEBIAN_FRONTEND noninteractive
 
 # Enable systemd.
-RUN yum -y install systemd systemd-sysv && \
+RUN yum -y install systemd systemd-sysv sudo && \
     yum clean all && \
     rm -rf /var/cache/yum && \
     rm -rf /lib/systemd/system/multi-user.target.wants/* && \

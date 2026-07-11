@@ -14,7 +14,7 @@ ENV container=docker
 ENV DEBIAN_FRONTEND noninteractive
 
 # Enable systemd.
-RUN dnf -y install systemd systemd-sysv && \
+RUN dnf -y install systemd systemd-sysv sudo && \
     dnf clean all && \
     rm -rf /var/cache/dnf && \
     rm -rf /lib/systemd/system/multi-user.target.wants/* && \

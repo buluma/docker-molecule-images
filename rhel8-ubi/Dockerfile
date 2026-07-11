@@ -15,11 +15,11 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # Enable systemd.
 RUN if command -v microdnf >/dev/null 2>&1; then \
-      microdnf install -y systemd systemd-sysv && microdnf clean all; \
+      microdnf install -y systemd systemd-sysv sudo && microdnf clean all; \
     elif command -v dnf >/dev/null 2>&1; then \
-      dnf install -y systemd systemd-sysv && dnf clean all; \
+      dnf install -y systemd systemd-sysv sudo && dnf clean all; \
     else \
-      yum install -y systemd systemd-sysv && yum clean all; \
+      yum install -y systemd systemd-sysv sudo && yum clean all; \
     fi && \
     rm -rf /var/cache/dnf && \
     rm -rf /lib/systemd/system/multi-user.target.wants/* && \
