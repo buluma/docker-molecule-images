@@ -45,7 +45,8 @@ This project provides ready-to-use Docker images for numerous Linux distribution
 - [kalilinux](kalilinux/) - Kali Linux rolling with systemd
 
 ### OpenSUSE
-- [opensuse](opensuse/) - OpenSUSE with systemd
+- [opensuse156](opensuse156/) - openSUSE Leap 15.6 with systemd
+- [opensuse](opensuse/) - OpenSUSE with systemd ⚠️ *(Deprecated - EOL Dec 2024)*
 
 ### Oracle Linux
 - [oraclelinux9](oraclelinux9/) - Oracle Linux 9 with systemd
@@ -156,6 +157,7 @@ docker run -it --rm --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw ghcr.io/bul
 [![kalilinux-rolling](https://github.com/buluma/docker-molecule-images/actions/workflows/kalilinux.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/kalilinux.yml)
 
 ### Opensuse
+[![opensuse156](https://github.com/buluma/docker-molecule-images/actions/workflows/opensuse156.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/opensuse156.yml)
 [![opensuse](https://github.com/buluma/docker-molecule-images/actions/workflows/opensuse.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/opensuse.yml)
 
 ### Oraclelinux
