@@ -61,9 +61,11 @@ This project provides ready-to-use Docker images for numerous Linux distribution
 ### AlmaLinux
 - [almalinux10](almalinux10/) - AlmaLinux 10 with systemd
 - [almalinux9](almalinux9/) - AlmaLinux 9 with systemd
+- [almalinux8](almalinux8/) - AlmaLinux 8 with systemd
 
 ### RHEL
 - [rhel9](rhel9/) - Red Hat Enterprise Linux 9 with systemd
+- [rhel8-ubi](rhel8-ubi/) - Red Hat Enterprise Linux 8 (UBI) 8 with systemd
 
 ### SUSE
 - [sles15](sles15/) - SUSE Linux Enterprise Server 15 with systemd ⚠️ *(Deprecated - Auth required, systemd path issue)*
@@ -168,9 +170,11 @@ docker run -it --rm --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw ghcr.io/bul
 ### AlmaLinux
 [![almalinux10](https://github.com/buluma/docker-molecule-images/actions/workflows/almalinux10.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/almalinux10.yml)
 [![almalinux9](https://github.com/buluma/docker-molecule-images/actions/workflows/almalinux9.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/almalinux9.yml)
+[![almalinux8](https://github.com/buluma/docker-molecule-images/actions/workflows/almalinux8.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/almalinux8.yml)
 
 ### RHEL
 [![rhel9](https://github.com/buluma/docker-molecule-images/actions/workflows/rhel9.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/rhel9.yml)
+[![rhel8-ubi](https://github.com/buluma/docker-molecule-images/actions/workflows/rhel8-ubi.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/rhel8-ubi.yml)
 
 ### SUSE
 [![opensuse-tumbleweed](https://github.com/buluma/docker-molecule-images/actions/workflows/opensuse-tumbleweed.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/opensuse-tumbleweed.yml)

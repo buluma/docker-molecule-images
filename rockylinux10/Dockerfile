@@ -1,4 +1,4 @@
-FROM rockylinux:latest
+FROM rockylinux:10-ubi-init
 LABEL maintainer="Michael Buluma"
 LABEL build_date="2025-12-01"
 

@@ -1,0 +1,34 @@
+# syntax=docker/dockerfile:1
+FROM registry.access.redhat.com/ubi8/ubi:latest
+
+LABEL maintainer="Michael Buluma <me@buluma.me.ke>"
+LABEL build_date="2026-07-11"
+
+LABEL org.opencontainers.image.title="Docker RHEL 8 Systemd" \
+      org.opencontainers.image.description="Red Hat Enterprise Linux 8 Container for Ansible Tests." \
+      org.opencontainers.image.url="https://github.com/buluma/docker-molecule-images/" \
+      org.opencontainers.image.source="https://github.com/buluma/docker-molecule-images" \
+      org.opencontainers.image.licenses="Apache-2.0"
+
+ENV container=docker
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Enable systemd.
+RUN if command -v microdnf >/dev/null 2>&1; then \
+      microdnf install -y systemd systemd-sysv && microdnf clean all; \
+    elif command -v dnf >/dev/null 2>&1; then \
+      dnf install -y systemd systemd-sysv && dnf clean all; \
+    else \
+      yum install -y systemd systemd-sysv && yum clean all; \
+    fi && \
+    rm -rf /var/cache/dnf && \
+    rm -rf /lib/systemd/system/multi-user.target.wants/* && \
+    rm -rf /etc/systemd/system/*.wants/* && \
+    rm -rf /lib/systemd/system/local-fs.target.wants/* && \
+    rm -rf /lib/systemd/system/sockets.target.wants/*udev* && \
+    rm -rf /lib/systemd/system/sockets.target.wants/*initctl* && \
+    rm -rf /lib/systemd/system/sysinit.target.wants/systemd-tmpfiles-setup* && \
+    rm -rf /lib/systemd/system/systemd-update-utmp*
+
+VOLUME [ "/sys/fs/cgroup" ]
+CMD ["/lib/systemd/systemd"]
