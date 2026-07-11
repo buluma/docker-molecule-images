@@ -2,11 +2,6 @@
 name: centos7
 
 on:
-  pull_request:
-  push:
-    paths:
-      - 'centos7/**'
-      - '.github/workflows/centos7.yml'
   workflow_dispatch:
 
 permissions: write-all

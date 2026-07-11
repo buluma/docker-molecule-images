@@ -2,11 +2,6 @@
 name: deb-buster
 
 on:
-  pull_request:
-  push:
-    paths:
-      - 'debian10/**'
-      - '.github/workflows/debian10.yml'
   workflow_dispatch:
 
 permissions: write-all

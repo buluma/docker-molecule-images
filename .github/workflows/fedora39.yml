@@ -2,11 +2,6 @@
 name: fedora39
 
 on:
-  pull_request:
-  push:
-    paths:
-      - 'fedora39/**'
-      - '.github/workflows/fedora39.yml'
   workflow_dispatch:
 
 permissions: write-all

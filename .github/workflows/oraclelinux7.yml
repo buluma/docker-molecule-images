@@ -2,11 +2,6 @@
 name: oraclelinux7
 
 on:
-  pull_request:
-  push:
-    paths:
-      - 'oraclelinux7/**'
-      - '.github/workflows/oraclelinux7.yml'
   workflow_dispatch:
 
 permissions: write-all

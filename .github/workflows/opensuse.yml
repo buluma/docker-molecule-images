@@ -2,11 +2,6 @@
 name: opensuse
 
 on:
-  pull_request:
-  push:
-    paths:
-      - 'opensuse/**'
-      - '.github/workflows/opensuse.yml'
   workflow_dispatch:
 
 permissions: write-all

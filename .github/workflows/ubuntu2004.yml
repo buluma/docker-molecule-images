@@ -2,11 +2,6 @@
 name: ubuntu2004
 
 on:
-  pull_request:
-  push:
-    paths:
-      - 'ubuntu2004/**'
-      - '.github/workflows/ubuntu2004.yml'
   workflow_dispatch:
 
 permissions: write-all
