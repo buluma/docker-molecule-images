@@ -155,7 +155,6 @@ docker run -it --rm --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw ghcr.io/bul
 
 ### Opensuse
 [![opensuse156](https://github.com/buluma/docker-molecule-images/actions/workflows/opensuse156.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/opensuse156.yml)
-[![opensuse](https://github.com/buluma/docker-molecule-images/actions/workflows/opensuse.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/opensuse.yml)
 
 ### Oraclelinux
 [![oraclelinux-9](https://github.com/buluma/docker-molecule-images/actions/workflows/oraclelinux9.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/oraclelinux9.yml)
@@ -163,7 +162,6 @@ docker run -it --rm --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw ghcr.io/bul
 
 
 ### Rockylinux
-[![rockylinux-10](https://github.com/buluma/docker-molecule-images/actions/workflows/rockylinux10.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/rockylinux10.yml)
 [![rockylinux-9](https://github.com/buluma/docker-molecule-images/actions/workflows/rockylinux9.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/rockylinux9.yml)
 
 
@@ -175,17 +173,13 @@ docker run -it --rm --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw ghcr.io/bul
 [![rhel9](https://github.com/buluma/docker-molecule-images/actions/workflows/rhel9.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/rhel9.yml)
 
 ### SUSE
-[![sles15](https://github.com/buluma/docker-molecule-images/actions/workflows/sles15.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/sles15.yml)
-[![sles12](https://github.com/buluma/docker-molecule-images/actions/workflows/sles12.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/sles12.yml)
 [![opensuse-tumbleweed](https://github.com/buluma/docker-molecule-images/actions/workflows/opensuse-tumbleweed.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/opensuse-tumbleweed.yml)
 
 ### Ubuntu
 [![ubuntu-26.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2604.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2604.yml)
 [![ubuntu-25.10](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2510.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2510.yml)
 [![ubuntu-25.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2504.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2504.yml)
-[![ubuntu-24.10](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2410.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2410.yml)
 [![ubuntu-24.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2404.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2404.yml)
-[![ubuntu-23.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2304.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2304.yml)
 [![ubuntu-22.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2204.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2204.yml)
 
 
