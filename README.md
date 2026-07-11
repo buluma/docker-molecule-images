@@ -13,7 +13,7 @@ This project provides ready-to-use Docker images for numerous Linux distribution
 
 ### Amazon Linux
 - [amazonlinux2023](amazonlinux2023/) - Amazon Linux 2023 with systemd
-- [amazonlinux2](amazonlinux2/) - Amazon Linux 2 with systemd
+- [amazonlinux2](amazonlinux2/) - Amazon Linux 2 with systemd ⚠️ *(Deprecated - EOL June 2025)*
 - [amazonlinux1](amazonlinux1/) - Amazon Linux 1 with upstart ⚠️ *(Deprecated - EOL July 2023)*
 
 ### Arch Linux
@@ -35,8 +35,8 @@ This project provides ready-to-use Docker images for numerous Linux distribution
 - [fedora44](fedora44/) - Fedora 44 with systemd
 - [fedora43](fedora43/) - Fedora 43 with systemd
 - [fedora42](fedora42/) - Fedora 42 with systemd
-- [fedora41](fedora41/) - Fedora 41 with systemd
-- [fedora40](fedora40/) - Fedora 40 with systemd
+- [fedora41](fedora41/) - Fedora 41 with systemd ⚠️ *(Deprecated - EOL July 2025)*
+- [fedora40](fedora40/) - Fedora 40 with systemd ⚠️ *(Deprecated - EOL January 2025)*
 - [fedora39](fedora39/) - Fedora 39 with systemd ⚠️ *(Deprecated - EOL November 2024)*
 - [fedora38](fedora38/) - Fedora 38 with systemd ⚠️ *(Deprecated - EOL May 2024)*
 - [fedora37](fedora37/) - Fedora 37 with systemd ⚠️ *(Deprecated - EOL November 2023)*
@@ -74,7 +74,7 @@ This project provides ready-to-use Docker images for numerous Linux distribution
 
 ### Ubuntu
 - [ubuntu2604](ubuntu2604/) - Ubuntu 26.04 (Provisional) with systemd
-- [ubuntu2510](ubuntu2510/) - Ubuntu 25.10 with systemd
+- [ubuntu2510](ubuntu2510/) - Ubuntu 25.10 with systemd ⚠️ *(Deprecated - EOL July 2025)*
 - [ubuntu2504](ubuntu2504/) - Ubuntu 25.04 (Plucky) with systemd
 - [ubuntu2410](ubuntu2410/) - Ubuntu 24.10 (Oracular) with systemd ⚠️ *(Deprecated - EOL July 2025)*
 - [ubuntu2404](ubuntu2404/) - Ubuntu 24.04 (Noble) with systemd
@@ -181,7 +181,6 @@ docker run -it --rm --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw ghcr.io/bul
 
 ### Ubuntu
 [![ubuntu-26.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2604.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2604.yml)
-[![ubuntu-25.10](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2510.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2510.yml)
 [![ubuntu-25.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2504.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2504.yml)
 [![ubuntu-24.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2404.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2404.yml)
 [![ubuntu-22.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2204.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2204.yml)
