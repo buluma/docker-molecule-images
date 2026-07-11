@@ -94,7 +94,7 @@ jobs:
       - name: Docker Scout
         id: docker-scout
         if: ${{ github.event_name == 'push' || github.event_name == 'pull_request' }}
-        uses: docker/scout-action@v1.21.0
+        uses: docker/scout-action@v1.23.1
         with:
           dockerhub-user: ${{ secrets.DOCKERHUB_USERNAME }}
           dockerhub-password: ${{ secrets.DOCKERHUB_TOKEN }}
