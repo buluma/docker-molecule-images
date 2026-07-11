@@ -70,9 +70,6 @@ This project provides ready-to-use Docker images for numerous Linux distribution
 - [sles12](sles12/) - SUSE Linux Enterprise Server 12 with systemd
 - [opensuse-tumbleweed](opensuse-tumbleweed/) - openSUSE Tumbleweed with systemd
 
-### Other Distributions
-- [clearlinux](clearlinux/) - Clear Linux with systemd
-
 ### Ubuntu
 - [ubuntu2604](ubuntu2604/) - Ubuntu 26.04 (Provisional) with systemd
 - [ubuntu2510](ubuntu2510/) - Ubuntu 25.10 with systemd
@@ -181,9 +178,6 @@ docker run -it --rm --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw ghcr.io/bul
 [![sles15](https://github.com/buluma/docker-molecule-images/actions/workflows/sles15.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/sles15.yml)
 [![sles12](https://github.com/buluma/docker-molecule-images/actions/workflows/sles12.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/sles12.yml)
 [![opensuse-tumbleweed](https://github.com/buluma/docker-molecule-images/actions/workflows/opensuse-tumbleweed.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/opensuse-tumbleweed.yml)
-
-### Other Distributions
-[![clearlinux](https://github.com/buluma/docker-molecule-images/actions/workflows/clearlinux.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/clearlinux.yml)
 
 ### Ubuntu
 [![ubuntu-26.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2604.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2604.yml)
