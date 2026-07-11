@@ -54,7 +54,7 @@ This project provides ready-to-use Docker images for numerous Linux distribution
 - [oraclelinux7](oraclelinux7/) - Oracle Linux 7 with systemd ⚠️ *(Deprecated - EOL June 2024)*
 
 ### Rocky Linux
-- [rockylinux10](rockylinux10/) - Rocky Linux 10 with systemd
+- [rockylinux10](rockylinux10/) - Rocky Linux 10 with systemd ⚠️ *(Deprecated - Base image not available)*
 - [rockylinux9](rockylinux9/) - Rocky Linux 9 with systemd
 - [rockylinux8](rockylinux8/) - Rocky Linux 8 with systemd ⚠️ *(Deprecated - EOL May 2025)*
 
@@ -66,8 +66,8 @@ This project provides ready-to-use Docker images for numerous Linux distribution
 - [rhel9](rhel9/) - Red Hat Enterprise Linux 9 with systemd
 
 ### SUSE
-- [sles15](sles15/) - SUSE Linux Enterprise Server 15 with systemd
-- [sles12](sles12/) - SUSE Linux Enterprise Server 12 with systemd
+- [sles15](sles15/) - SUSE Linux Enterprise Server 15 with systemd ⚠️ *(Deprecated - Auth required, systemd path issue)*
+- [sles12](sles12/) - SUSE Linux Enterprise Server 12 with systemd ⚠️ *(Deprecated - Auth required)*
 - [opensuse-tumbleweed](opensuse-tumbleweed/) - openSUSE Tumbleweed with systemd
 
 ### Ubuntu
@@ -76,7 +76,7 @@ This project provides ready-to-use Docker images for numerous Linux distribution
 - [ubuntu2504](ubuntu2504/) - Ubuntu 25.04 (Plucky) with systemd
 - [ubuntu2410](ubuntu2410/) - Ubuntu 24.10 (Oracular) with systemd ⚠️ *(Deprecated - EOL July 2025)*
 - [ubuntu2404](ubuntu2404/) - Ubuntu 24.04 (Noble) with systemd
-- [ubuntu2304](ubuntu2304/) - Ubuntu 23.04 (Lunar) with systemd
+- [ubuntu2304](ubuntu2304/) - Ubuntu 23.04 (Lunar) with systemd ⚠️ *(Deprecated - EOL Jan 2024)*
 - [ubuntu2204](ubuntu2204/) - Ubuntu 22.04 (Jammy) with systemd
 - [ubuntu2004](ubuntu2004/) - Ubuntu 20.04 (Focal) with systemd ⚠️ *(Deprecated - EOL April 2025)*
 - [ubuntu1804](ubuntu1804/) - Ubuntu 18.04 (Bionic) with systemd ⚠️ *(Deprecated - EOL April 2023)*
