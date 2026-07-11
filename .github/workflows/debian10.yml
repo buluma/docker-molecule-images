@@ -7,8 +7,6 @@ on:
     paths:
       - 'debian10/**'
       - '.github/workflows/debian10.yml'
-  schedule:
-    - cron: '10 6,15 * * 1,6'
   workflow_dispatch:
 
 permissions: write-all

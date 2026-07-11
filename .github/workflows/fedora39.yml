@@ -7,8 +7,6 @@ on:
     paths:
       - 'fedora39/**'
       - '.github/workflows/fedora39.yml'
-  schedule:
-    - cron: '10 6,15 * * 1,6'
   workflow_dispatch:
 
 permissions: write-all

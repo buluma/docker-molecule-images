@@ -7,8 +7,6 @@ on:
     paths:
       - 'ubuntu2004/**'
       - '.github/workflows/ubuntu2004.yml'
-  schedule:
-    - cron: '10 6,15 * * 1,6'
   workflow_dispatch:
 
 permissions: write-all

@@ -7,8 +7,6 @@ on:
     paths:
       - 'amazonlinux1/**'
       - '.github/workflows/amazonlinux1.yml'
-  schedule:
-    - cron: '10 6,15 * * 1,6'
   workflow_dispatch:
 
 permissions: write-all

@@ -7,8 +7,6 @@ on:
     paths:
       - 'centos7/**'
       - '.github/workflows/centos7.yml'
-  schedule:
-    - cron: '10 6,15 * * 1,6'
   workflow_dispatch:
 
 permissions: write-all

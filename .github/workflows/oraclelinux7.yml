@@ -7,8 +7,6 @@ on:
     paths:
       - 'oraclelinux7/**'
       - '.github/workflows/oraclelinux7.yml'
-  schedule:
-    - cron: '10 6,15 * * 1,6'
   workflow_dispatch:
 
 permissions: write-all
