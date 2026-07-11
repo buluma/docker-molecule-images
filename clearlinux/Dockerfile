@@ -15,8 +15,8 @@ ENV container=${CONTAINER_RUNTIME}
 
 # Clear Linux uses swupd for package management
 # Install essential packages for Ansible testing
-RUN swupd update && \
-    swupd bundle-add \
+# Skip swupd update as it fails in CI due to network restrictions
+RUN swupd bundle-add \
         os-core \
         os-core-update \
         python3-basic \
