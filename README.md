@@ -74,7 +74,7 @@ This project provides ready-to-use Docker images for numerous Linux distribution
 - [ubuntu2604](ubuntu2604/) - Ubuntu 26.04 (Provisional) with systemd
 - [ubuntu2510](ubuntu2510/) - Ubuntu 25.10 with systemd
 - [ubuntu2504](ubuntu2504/) - Ubuntu 25.04 (Plucky) with systemd
-- [ubuntu2410](ubuntu2410/) - Ubuntu 24.10 (Oracular) with systemd
+- [ubuntu2410](ubuntu2410/) - Ubuntu 24.10 (Oracular) with systemd ⚠️ *(Deprecated - EOL July 2025)*
 - [ubuntu2404](ubuntu2404/) - Ubuntu 24.04 (Noble) with systemd
 - [ubuntu2304](ubuntu2304/) - Ubuntu 23.04 (Lunar) with systemd
 - [ubuntu2204](ubuntu2204/) - Ubuntu 22.04 (Jammy) with systemd
