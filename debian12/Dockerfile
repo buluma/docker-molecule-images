@@ -24,7 +24,13 @@ RUN apt-get update ; \
     rm -rf /lib/systemd/system/sockets.target.wants/*udev* ; \
     rm -rf /lib/systemd/system/sockets.target.wants/*initctl* ; \
     rm -rf /lib/systemd/system/sysinit.target.wants/systemd-tmpfiles-setup* ; \
-    rm -rf /lib/systemd/system/systemd-update-utmp*
+    rm -rf /lib/systemd/system/systemd-update-utmp* ; \
+    # Fix PAM for container environments — allow sudo without password
+    (mkdir -p /etc/pam.d/sudo.d && echo 'auth sufficient pam_permit.so' > /etc/pam.d/sudo.d/docker-container || \
+     sed -i '1iauth sufficient pam_permit.so' /etc/pam.d/sudo) ; \
+    # Pre-configure passwordless sudo for sudo group (Debian convention)
+    echo '%sudo ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/molecule ; \
+    chmod 0440 /etc/sudoers.d/molecule
 
 VOLUME [ "/sys/fs/cgroup" ]
 CMD ["/lib/systemd/systemd"]

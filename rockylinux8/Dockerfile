@@ -19,7 +19,14 @@ RUN yum -y install rpm dnf-plugins-core \
       python3-pip \
       python3-pyyaml \
       sudo \
- && yum clean all
+ && yum clean all && \
+    # Fix PAM for container environments — allow sudo without password
+    (mkdir -p /etc/pam.d/sudo.d && echo 'auth sufficient pam_permit.so' > /etc/pam.d/sudo.d/docker-container || \
+     sed -i '1iauth sufficient pam_permit.so' /etc/pam.d/sudo) && \
+    # Pre-configure passwordless sudo for wheel group
+    groupadd -f wheel && \
+    echo '%wheel ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/molecule && \
+    chmod 0440 /etc/sudoers.d/molecule
 
 VOLUME ["/sys/fs/cgroup"]
 CMD ["/usr/lib/systemd/systemd"]
