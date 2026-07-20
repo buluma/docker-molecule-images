@@ -88,5 +88,5 @@ jobs:
           platforms: linux/amd64, linux/arm64, linux/ppc64le, linux/s390x
           push: ${{ github.event_name != 'pull_request' }}
           tags: |
-            ${{ github.repository }}:fedora44
+            ${{ github.repository }}:fedora44, ${{ github.repository }}:44
           labels: ${{ steps.meta.outputs.labels }}

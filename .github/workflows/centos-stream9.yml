@@ -87,5 +87,5 @@ jobs:
           platforms: linux/amd64, linux/arm64, linux/ppc64le, linux/s390x
           push: ${{ github.event_name != 'pull_request' }}
           tags: |
-            ${{ github.repository }}:centos-stream9
+            ${{ github.repository }}:centos-stream9, ${{ github.repository }}:stream
           labels: ${{ steps.meta.outputs.labels }}

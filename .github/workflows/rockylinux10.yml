@@ -87,5 +87,5 @@ jobs:
           platforms: linux/amd64, linux/arm64
           push: ${{ github.event_name != 'pull_request' }}
           tags: |
-            ${{ github.repository }}:rockylinux10
+            ${{ github.repository }}:rockylinux10, ${{ github.repository }}:10
           labels: ${{ steps.meta.outputs.labels }}

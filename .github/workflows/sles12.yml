@@ -88,6 +88,6 @@ jobs:
           platforms: linux/amd64, linux/arm64, linux/ppc64le, linux/s390x, linux/arm/v7
           push: ${{ github.event_name != 'pull_request' }}
           tags: |
-            ${{ github.repository }}:sles12
+            ${{ github.repository }}:sles12, ${{ github.repository }}:12
           labels: ${{ steps.meta.outputs.labels }}
 
