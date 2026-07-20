@@ -8,7 +8,7 @@ on:
       - 'sles15/**'
       - '.github/workflows/sles15.yml'
   schedule:
-    - cron: '10 6,15 * * 1,6'
+    - cron: '10 14 * * 5'
   workflow_dispatch:
 
 permissions: write-all

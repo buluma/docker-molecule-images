@@ -8,7 +8,7 @@ on:
       - 'rhel9/**'
       - '.github/workflows/rhel9.yml'
   schedule:
-    - cron: '10 6,15 * * 1,6'
+    - cron: '10 00 * * 1'
   workflow_dispatch:
 
 permissions: write-all

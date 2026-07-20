@@ -8,7 +8,7 @@ on:
       - 'debian13/**'
       - '.github/workflows/debian13.yml'
   schedule:
-    - cron: '10 6,15 * * 1,6'
+    - cron: '10 14 * * 2'
   workflow_dispatch:
 
 permissions: write-all

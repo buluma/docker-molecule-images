@@ -8,7 +8,7 @@ on:
       - 'amazonlinux2023/**'
       - '.github/workflows/amazonlinux2023.yml'
   schedule:
-    - cron: '10 6,15 * * 1,6'
+    - cron: '10 04 * * 1'
   workflow_dispatch:
 
 permissions: write-all

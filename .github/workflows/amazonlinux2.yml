@@ -8,7 +8,7 @@ on:
       - 'amazonlinux2/**'
       - '.github/workflows/amazonlinux2.yml'
   schedule:
-    - cron: '10 6,15 * * 1,6'
+    - cron: '10 02 * * 1'
   workflow_dispatch:
 
 permissions: write-all

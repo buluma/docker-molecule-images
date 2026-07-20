@@ -8,7 +8,7 @@ on:
       - 'ubuntu2404/**'
       - '.github/workflows/ubuntu2404.yml'
   schedule:
-    - cron: '10 6,15 * * 1,6'
+    - cron: '10 10 * * 3'
   workflow_dispatch:
 
 permissions: write-all
