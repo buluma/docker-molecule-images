@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM fedora:40
+FROM fedora:44
 
 LABEL maintainer="Michael Buluma"
 LABEL build_date="2024-06-19"
