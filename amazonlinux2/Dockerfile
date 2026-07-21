@@ -1,4 +1,4 @@
-FROM amazonlinux:2
+FROM amazonlinux:2023
 LABEL maintainer="buluma"
 LABEL build_date="2024-03-25"
 
