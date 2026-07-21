@@ -20,9 +20,11 @@ RUN yum -y install rpm dnf-plugins-core \
       python3-pyyaml \
       sudo \
  && yum clean all && \
-    # Fix PAM for container environments — allow sudo without password
-    (mkdir -p /etc/pam.d/sudo.d && echo 'auth sufficient pam_permit.so' > /etc/pam.d/sudo.d/docker-container || \
-     sed -i '1iauth sufficient pam_permit.so' /etc/pam.d/sudo) && \
+    # Fix PAM for container environments — allow sudo without password.
+    # /etc/pam.d/sudo has no sudo.d include on EL, so patch it directly for
+    # both the auth and account phases (sudo's account check fails otherwise).
+    sed -i '1iaccount sufficient pam_permit.so' /etc/pam.d/sudo && \
+    sed -i '1iauth sufficient pam_permit.so' /etc/pam.d/sudo && \
     # Pre-configure passwordless sudo for wheel group
     groupadd -f wheel && \
     echo '%wheel ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/molecule && \
