@@ -1,4 +1,4 @@
-FROM centos:7
+FROM centos:8
 
 LABEL maintainer="buluma"
 LABEL build_date="2024-03-24"
