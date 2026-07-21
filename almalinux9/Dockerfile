@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM almalinux:9
+FROM almalinux:10
 
 LABEL maintainer="Michael Buluma <me@buluma.me.ke>"
 LABEL build_date="2026-01-09"
