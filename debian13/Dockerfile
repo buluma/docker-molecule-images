@@ -25,6 +25,13 @@ RUN apt-get update ; \
     rm -rf /lib/systemd/system/sockets.target.wants/*initctl* ; \
     rm -rf /lib/systemd/system/sysinit.target.wants/systemd-tmpfiles-setup* ; \
     rm -rf /lib/systemd/system/systemd-update-utmp* ; \
+    # Trixie's systemd no longer creates /run/lock as a built-in startup
+    # fallback (older systemd, e.g. bookworm's, did); without this unit
+    # enabled, /run/lock (and the /var/lock symlink to it) never gets
+    # created, breaking any service whose init script locks there
+    # (e.g. apache2ctl's mktemp under /var/lock).
+    mkdir -p /lib/systemd/system/sysinit.target.wants ; \
+    ln -sf /lib/systemd/system/systemd-tmpfiles-setup.service /lib/systemd/system/sysinit.target.wants/systemd-tmpfiles-setup.service ; \
     # Fix PAM for container environments — allow sudo without password
     (mkdir -p /etc/pam.d/sudo.d && echo 'auth sufficient pam_permit.so' > /etc/pam.d/sudo.d/docker-container || \
      sed -i '1iauth sufficient pam_permit.so' /etc/pam.d/sudo) ; \
