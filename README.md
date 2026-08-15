@@ -44,6 +44,9 @@ This project provides ready-to-use Docker images for numerous Linux distribution
 ### Kali Linux
 - [kalilinux](kalilinux/) - Kali Linux rolling with systemd (Rolling release)
 
+### openEuler
+- [openeuler](openeuler/) - openEuler 24.03 LTS with systemd (LTS)
+
 ### OpenSUSE
 - [opensuse156](opensuse156/) - openSUSE Leap 15.6 with systemd (EOL: April 30, 2026)
 - [opensuse-tumbleweed](opensuse-tumbleweed/) - openSUSE Tumbleweed with systemd (Rolling release)
@@ -156,6 +159,9 @@ docker run -it --rm --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw ghcr.io/bul
 
 ### Kalilinux
 [![kalilinux-rolling](https://github.com/buluma/docker-molecule-images/actions/workflows/kalilinux.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/kalilinux.yml)
+
+### Openeuler
+[![openeuler](https://github.com/buluma/docker-molecule-images/actions/workflows/openeuler.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/openeuler.yml)
 
 ### Opensuse
 [![opensuse156](https://github.com/buluma/docker-molecule-images/actions/workflows/opensuse156.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/opensuse156.yml)
