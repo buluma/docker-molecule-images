@@ -93,15 +93,15 @@ This project provides ready-to-use Docker images for numerous Linux distribution
 
 ### Ubuntu
 
-- [ubuntu2604](ubuntu2604/) - Ubuntu 26.04 LTS (Resolute Raccoon) with systemd (EOL: April 30, 2031; ESM: April 2036)
+- [ubuntu2604](ubuntu2604/) - Ubuntu 26.04 LTS (Resolute Raccoon) with systemd (EOL: May 2031; ESM: May 2036)
 - [ubuntu2510](ubuntu2510/) - Ubuntu 25.10 (Questing Quokka) with systemd ⚠️ *(Deprecated - EOL July 9, 2026)*
 - [ubuntu2504](ubuntu2504/) - Ubuntu 25.04 (Plucky Puffin) with systemd ⚠️ *(Deprecated - EOL January 15, 2026)*
 - [ubuntu2410](ubuntu2410/) - Ubuntu 24.10 (Oracular Oriole) with systemd ⚠️ *(Deprecated - EOL July 10, 2025)*
-- [ubuntu2404](ubuntu2404/) - Ubuntu 24.04 LTS (Noble Numbat) with systemd (EOL: May 31, 2029; ESM: May 2036)
+- [ubuntu2404](ubuntu2404/) - Ubuntu 24.04 LTS (Noble Numbat) with systemd (EOL: May 2029; ESM: May 2034)
 - [ubuntu2304](ubuntu2304/) - Ubuntu 23.04 (Lunar Lobster) with systemd ⚠️ *(Deprecated - EOL January 25, 2024)*
-- [ubuntu2204](ubuntu2204/) - Ubuntu 22.04 LTS (Jammy Jellyfish) with systemd (EOL: April 1, 2027; ESM: April 2032)
-- [ubuntu2004](ubuntu2004/) - Ubuntu 20.04 LTS (Focal Fossa) with systemd ⚠️ *(Deprecated - EOL May 29, 2025; ESM: April 2030)*
-- [ubuntu1804](ubuntu1804/) - Ubuntu 18.04 LTS (Bionic Beaver) with systemd ⚠️ *(Deprecated - EOL May 2023; ESM: April 2028)*
+- [ubuntu2204](ubuntu2204/) - Ubuntu 22.04 LTS (Jammy Jellyfish) with systemd (EOL: May 2027; ESM: May 2032)
+- [ubuntu2004](ubuntu2004/) - Ubuntu 20.04 LTS (Focal Fossa) with systemd ⚠️ *(Deprecated - EOL May 2025; ESM: May 2030)*
+- [ubuntu1804](ubuntu1804/) - Ubuntu 18.04 LTS (Bionic Beaver) with systemd ⚠️ *(Deprecated - EOL May 2023; ESM: May 2028)*
 
 ## Usage
 
