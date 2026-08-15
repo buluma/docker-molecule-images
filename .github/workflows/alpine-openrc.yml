@@ -3,6 +3,9 @@ name: alpine-openrc
 
 on:
   pull_request:
+    paths:
+      - 'alpine-openrc/**'
+      - '.github/workflows/alpine-openrc.yml'
   push:
     paths:
       - 'alpine-openrc/**'

@@ -3,6 +3,9 @@ name: opensuse-tumbleweed
 
 on:
   pull_request:
+    paths:
+      - 'opensuse-tumbleweed/**'
+      - '.github/workflows/opensuse-tumbleweed.yml'
   push:
     paths:
       - 'opensuse-tumbleweed/**'

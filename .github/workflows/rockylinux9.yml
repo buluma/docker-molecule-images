@@ -3,6 +3,9 @@ name: rockylinux9
 
 on:
   pull_request:
+    paths:
+      - 'rockylinux9/**'
+      - '.github/workflows/rockylinux9.yml'
   push:
     paths:
       - 'rockylinux9/**'

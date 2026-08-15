@@ -3,6 +3,9 @@ name: rhel9
 
 on:
   pull_request:
+    paths:
+      - 'rhel9/**'
+      - '.github/workflows/rhel9.yml'
   push:
     paths:
       - 'rhel9/**'

@@ -3,6 +3,9 @@ name: almalinux8
 
 on:
   pull_request:
+    paths:
+      - 'almalinux8/**'
+      - '.github/workflows/almalinux8.yml'
   push:
     paths:
       - 'almalinux8/**'

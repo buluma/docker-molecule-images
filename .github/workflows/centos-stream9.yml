@@ -3,6 +3,9 @@ name: centos-stream9
 
 on:
   pull_request:
+    paths:
+      - 'centos-stream9/**'
+      - '.github/workflows/centos-stream9.yml'
   push:
     paths:
       - 'centos-stream9/**'

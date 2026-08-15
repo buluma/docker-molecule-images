@@ -3,6 +3,9 @@ name: amazonlinux2023
 
 on:
   pull_request:
+    paths:
+      - 'amazonlinux2023/**'
+      - '.github/workflows/amazonlinux2023.yml'
   push:
     paths:
       - 'amazonlinux2023/**'

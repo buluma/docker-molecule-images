@@ -3,6 +3,9 @@ name: rhel8-ubi
 
 on:
   pull_request:
+    paths:
+      - 'rhel8-ubi/**'
+      - '.github/workflows/rhel8-ubi.yml'
   push:
     paths:
       - 'rhel8-ubi/**'

@@ -3,6 +3,9 @@ name: archlinux
 
 on:
   pull_request:
+    paths:
+      - 'archlinux/**'
+      - '.github/workflows/archlinux.yml'
   push:
     paths:
       - 'archlinux/**'

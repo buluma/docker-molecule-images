@@ -3,6 +3,9 @@ name: kalilinux
 
 on:
   pull_request:
+    paths:
+      - 'kalilinux/**'
+      - '.github/workflows/kalilinux.yml'
   push:
     paths:
       - 'kalilinux/**'

@@ -3,6 +3,9 @@ name: ubuntu2404
 
 on:
   pull_request:
+    paths:
+      - 'ubuntu2404/**'
+      - '.github/workflows/ubuntu2404.yml'
   push:
     paths:
       - 'ubuntu2404/**'

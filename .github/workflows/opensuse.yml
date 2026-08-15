@@ -3,6 +3,9 @@ name: opensuse
 
 on:
   pull_request:
+    paths:
+      - 'opensuse/**'
+      - '.github/workflows/opensuse.yml'
   push:
     paths:
       - 'opensuse/**'

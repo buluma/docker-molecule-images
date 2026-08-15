@@ -3,6 +3,9 @@ name: openeuler
 
 on:
   pull_request:
+    paths:
+      - 'openeuler/**'
+      - '.github/workflows/openeuler.yml'
   push:
     paths:
       - 'openeuler/**'

@@ -3,6 +3,9 @@ name: amazonlinux2
 
 on:
   pull_request:
+    paths:
+      - 'amazonlinux2/**'
+      - '.github/workflows/amazonlinux2.yml'
   push:
     paths:
       - 'amazonlinux2/**'

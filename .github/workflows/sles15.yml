@@ -3,6 +3,9 @@ name: sles15
 
 on:
   pull_request:
+    paths:
+      - 'sles15/**'
+      - '.github/workflows/sles15.yml'
   push:
     paths:
       - 'sles15/**'

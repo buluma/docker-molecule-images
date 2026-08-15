@@ -3,6 +3,9 @@ name: fedora43
 
 on:
   pull_request:
+    paths:
+      - 'fedora43/**'
+      - '.github/workflows/fedora43.yml'
   push:
     paths:
       - 'fedora43/**'

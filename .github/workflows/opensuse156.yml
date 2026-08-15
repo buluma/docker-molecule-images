@@ -3,6 +3,9 @@ name: opensuse156
 
 on:
   pull_request:
+    paths:
+      - 'opensuse156/**'
+      - '.github/workflows/opensuse156.yml'
   push:
     paths:
       - 'opensuse156/**'

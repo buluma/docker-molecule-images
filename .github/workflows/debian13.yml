@@ -3,6 +3,9 @@ name: deb-trixie
 
 on:
   pull_request:
+    paths:
+      - 'debian13/**'
+      - '.github/workflows/debian13.yml'
   push:
     paths:
       - 'debian13/**'

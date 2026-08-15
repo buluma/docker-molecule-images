@@ -3,6 +3,9 @@ name: oraclelinux9
 
 on:
   pull_request:
+    paths:
+      - 'oraclelinux9/**'
+      - '.github/workflows/oraclelinux9.yml'
   push:
     paths:
       - 'oraclelinux9/**'
