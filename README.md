@@ -95,7 +95,7 @@ This project provides ready-to-use Docker images for numerous Linux distribution
 
 - [ubuntu2604](ubuntu2604/) - Ubuntu 26.04 LTS (Resolute Raccoon) with systemd (EOL: May 29, 2031; ESM: April 2036)
 - [ubuntu2510](ubuntu2510/) - Ubuntu 25.10 (Questing Quokka) with systemd ⚠️ *(Deprecated - EOL July 9, 2026)*
-- [ubuntu2504](ubuntu2504/) - Ubuntu 25.04 (Plucky Puffin) with systemd (EOL: January 15, 2026)
+- [ubuntu2504](ubuntu2504/) - Ubuntu 25.04 (Plucky Puffin) with systemd ⚠️ *(Deprecated - EOL January 15, 2026)*
 - [ubuntu2410](ubuntu2410/) - Ubuntu 24.10 (Oracular Oriole) with systemd ⚠️ *(Deprecated - EOL July 10, 2025)*
 - [ubuntu2404](ubuntu2404/) - Ubuntu 24.04 LTS (Noble Numbat) with systemd (EOL: May 31, 2029; ESM: April 2034)
 - [ubuntu2304](ubuntu2304/) - Ubuntu 23.04 (Lunar Lobster) with systemd ⚠️ *(Deprecated - EOL January 25, 2024)*
