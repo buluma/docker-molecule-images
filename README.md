@@ -9,21 +9,26 @@ This project provides ready-to-use Docker images for numerous Linux distribution
 ## Available Distributions
 
 ### Alpine Linux
+
 - [alpine-openrc](alpine-openrc/) - Alpine Linux with OpenRC init system (Rolling release)
 
 ### Amazon Linux
+
 - [amazonlinux2023](amazonlinux2023/) - Amazon Linux 2023 with systemd (EOL: June 2029)
 - [amazonlinux2](amazonlinux2/) - Amazon Linux 2 with systemd ⚠️ *(Deprecated - EOL June 30, 2026)*
 - [amazonlinux1](amazonlinux1/) - Amazon Linux 1 with upstart ⚠️ *(Deprecated - EOL July 2023)*
 
 ### Arch Linux
+
 - [archlinux](archlinux/) - Arch Linux with systemd (Rolling release)
 
 ### CentOS
+
 - [centos-stream9](centos-stream9/) - CentOS Stream 9 with systemd (Rolling)
 - [centos7](centos7/) - CentOS 7 with systemd ⚠️ *(Deprecated - EOL June 2024)*
 
 ### Debian
+
 - [debian13](debian13/) - Debian 13 (Trixie) with systemd (EOL: 2030)
 - [debian12](debian12/) - Debian 12 (Bookworm) with systemd (EOL: 2028)
 - [debian11](debian11/) - Debian 11 (Bullseye) with systemd (EOL: 2026)
@@ -31,6 +36,7 @@ This project provides ready-to-use Docker images for numerous Linux distribution
 - [debian9](debian9/) - Debian 9 (Stretch) with systemd ⚠️ *(Deprecated - EOL June 2022)*
 
 ### Fedora
+
 - [fedora45](fedora45/) - Fedora 45 with systemd (EOL: November 24, 2027)
 - [fedora44](fedora44/) - Fedora 44 with systemd (EOL: June 2, 2027)
 - [fedora43](fedora43/) - Fedora 43 with systemd (EOL: December 9, 2026)
@@ -42,42 +48,51 @@ This project provides ready-to-use Docker images for numerous Linux distribution
 - [fedora37](fedora37/) - Fedora 37 with systemd ⚠️ *(Deprecated - EOL December 5, 2023)*
 
 ### Kali Linux
+
 - [kalilinux](kalilinux/) - Kali Linux rolling with systemd (Rolling release)
 
 ### openEuler
+
 - [openeuler](openeuler/) - openEuler 24.03 LTS with systemd (LTS)
 
 ### OpenSUSE
+
 - [opensuse156](opensuse156/) - openSUSE Leap 15.6 with systemd (EOL: April 30, 2026)
 - [opensuse-tumbleweed](opensuse-tumbleweed/) - openSUSE Tumbleweed with systemd (Rolling release)
 - [opensuse](opensuse/) - OpenSUSE with systemd ⚠️ *(Deprecated - EOL Dec 2024)*
 
 ### Oracle Linux
+
 - [oraclelinux9](oraclelinux9/) - Oracle Linux 9 with systemd (EOL: June 30, 2032; Extended: June 30, 2035)
 - [oraclelinux8](oraclelinux8/) - Oracle Linux 8 with systemd (EOL: July 31, 2029; Extended: July 31, 2032)
 - [oraclelinux7](oraclelinux7/) - Oracle Linux 7 with systemd ⚠️ *(Deprecated - EOL December 31, 2024; Extended: June 30, 2028)*
 
 ### Rocky Linux
+
 - [rockylinux9](rockylinux9/) - Rocky Linux 9 with systemd (EOL: May 2032)
 - [rockylinux8](rockylinux8/) - Rocky Linux 8 with systemd ⚠️ *(Deprecated - EOL May 2029)*
 - [rockylinux10](rockylinux10/) - Rocky Linux 10 with systemd ⚠️ *(Deprecated - Base image not available)*
 
 ### AlmaLinux
+
 - [almalinux10](almalinux10/) - AlmaLinux 10 with systemd (EOL: 2033)
 - [almalinux9](almalinux9/) - AlmaLinux 9 with systemd (EOL: 2029)
 - [almalinux8](almalinux8/) - AlmaLinux 8 with systemd (EOL: March 1, 2029)
 
 ### RHEL
+
 - [rhel9](rhel9/) - Red Hat Enterprise Linux 9 with systemd (Full Support: May 2027; Maintenance: May 2032; ELC available)
 - [rhel8-ubi](rhel8-ubi/) - Red Hat Enterprise Linux 8 (UBI) with systemd (Full Support: May 2029; Maintenance: May 2032; ELC available)
 
 ### SUSE
+
 - [opensuse-tumbleweed](opensuse-tumbleweed/) - openSUSE Tumbleweed with systemd (Rolling release)
 - [opensuse156](opensuse156/) - openSUSE Leap 15.6 with systemd (EOL: April 30, 2026)
 - [sles15](sles15/) - SUSE Linux Enterprise Server 15 with systemd ⚠️ *(Deprecated - Auth required, systemd path issue)*
 - [sles12](sles12/) - SUSE Linux Enterprise Server 12 with systemd ⚠️ *(Deprecated - Auth required)*
 
 ### Ubuntu
+
 - [ubuntu2604](ubuntu2604/) - Ubuntu 26.04 LTS (Resolute Raccoon) with systemd (EOL: May 29, 2031; ESM: April 2036)
 - [ubuntu2510](ubuntu2510/) - Ubuntu 25.10 (Questing Quokka) with systemd ⚠️ *(Deprecated - EOL July 9, 2026)*
 - [ubuntu2504](ubuntu2504/) - Ubuntu 25.04 (Plucky Puffin) with systemd (EOL: January 15, 2026)
@@ -125,28 +140,30 @@ docker run -it --rm --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw ghcr.io/bul
 ## Build Status
 
 ### Alpine
+
 [![alpine-openrc](https://github.com/buluma/docker-molecule-images/actions/workflows/alpine-openrc.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/alpine-openrc.yml)
 
 ### Archlinux
+
 [![archlinux](https://github.com/buluma/docker-molecule-images/actions/workflows/archlinux.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/archlinux.yml)
 
 ### Amazonlinux
+
 [![amazonlinux-2023](https://github.com/buluma/docker-molecule-images/actions/workflows/amazonlinux2023.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/amazonlinux2023.yml)
 [![amazonlinux-2](https://github.com/buluma/docker-molecule-images/actions/workflows/amazonlinux2.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/amazonlinux2.yml)
 
-
 ### Centos
+
 [![centos-stream9](https://github.com/buluma/docker-molecule-images/actions/workflows/centos-stream9.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/centos-stream9.yml)
 
-
 ### Debian
+
 [![debian13](https://github.com/buluma/docker-molecule-images/actions/workflows/debian13.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/debian13.yml)
 [![debian12](https://github.com/buluma/docker-molecule-images/actions/workflows/debian12.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/debian12.yml)
 [![debian11](https://github.com/buluma/docker-molecule-images/actions/workflows/debian11.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/debian11.yml)
 
-
-
 ### Fedora
+
 [![fedora45](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora45.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora45.yml)
 [![fedora44](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora44.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora44.yml)
 [![fedora43](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora43.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora43.yml)
@@ -154,46 +171,48 @@ docker run -it --rm --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw ghcr.io/bul
 [![fedora41](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora41.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora41.yml)
 [![fedora40](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora40.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/fedora40.yml)
 
-
-
-
 ### Kalilinux
+
 [![kalilinux-rolling](https://github.com/buluma/docker-molecule-images/actions/workflows/kalilinux.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/kalilinux.yml)
 
 ### Openeuler
+
 [![openeuler](https://github.com/buluma/docker-molecule-images/actions/workflows/openeuler.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/openeuler.yml)
 
 ### Opensuse
+
 [![opensuse156](https://github.com/buluma/docker-molecule-images/actions/workflows/opensuse156.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/opensuse156.yml)
 
 ### Oraclelinux
+
 [![oraclelinux-9](https://github.com/buluma/docker-molecule-images/actions/workflows/oraclelinux9.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/oraclelinux9.yml)
 [![oraclelinux-8](https://github.com/buluma/docker-molecule-images/actions/workflows/oraclelinux8.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/oraclelinux8.yml)
 
-
 ### Rockylinux
+
 [![rockylinux-9](https://github.com/buluma/docker-molecule-images/actions/workflows/rockylinux9.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/rockylinux9.yml)
 
-
 ### AlmaLinux
+
 [![almalinux10](https://github.com/buluma/docker-molecule-images/actions/workflows/almalinux10.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/almalinux10.yml)
 [![almalinux9](https://github.com/buluma/docker-molecule-images/actions/workflows/almalinux9.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/almalinux9.yml)
 [![almalinux8](https://github.com/buluma/docker-molecule-images/actions/workflows/almalinux8.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/almalinux8.yml)
 
 ### RHEL
+
 [![rhel9](https://github.com/buluma/docker-molecule-images/actions/workflows/rhel9.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/rhel9.yml)
 [![rhel8-ubi](https://github.com/buluma/docker-molecule-images/actions/workflows/rhel8-ubi.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/rhel8-ubi.yml)
 
 ### SUSE
+
 [![opensuse-tumbleweed](https://github.com/buluma/docker-molecule-images/actions/workflows/opensuse-tumbleweed.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/opensuse-tumbleweed.yml)
 
 ### Ubuntu
+
 [![ubuntu-26.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2604.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2604.yml)
 [![ubuntu-25.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2504.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2504.yml)
 [![ubuntu-24.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2404.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2404.yml)
 [![ubuntu-22.04](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2204.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/ubuntu2204.yml)
-
-
 
 ## Features
 
