@@ -40,7 +40,7 @@ This project provides ready-to-use Docker images for numerous Linux distribution
 - [fedora45](fedora45/) - Fedora 45 with systemd (EOL: November 24, 2027)
 - [fedora44](fedora44/) - Fedora 44 with systemd (EOL: June 2, 2027)
 - [fedora43](fedora43/) - Fedora 43 with systemd (EOL: December 9, 2026)
-- [fedora42](fedora42/) - Fedora 42 with systemd (EOL: May 27, 2026)
+- [fedora42](fedora42/) - Fedora 42 with systemd ⚠️ *(Deprecated - EOL May 27, 2026)*
 - [fedora41](fedora41/) - Fedora 41 with systemd ⚠️ *(Deprecated - EOL December 15, 2025)*
 - [fedora40](fedora40/) - Fedora 40 with systemd ⚠️ *(Deprecated - EOL May 13, 2025)*
 - [fedora39](fedora39/) - Fedora 39 with systemd ⚠️ *(Deprecated - EOL November 26, 2024)*
@@ -75,14 +75,14 @@ This project provides ready-to-use Docker images for numerous Linux distribution
 
 ### AlmaLinux
 
-- [almalinux10](almalinux10/) - AlmaLinux 10 with systemd (EOL: 2033)
-- [almalinux9](almalinux9/) - AlmaLinux 9 with systemd (EOL: 2029)
-- [almalinux8](almalinux8/) - AlmaLinux 8 with systemd (EOL: March 1, 2029)
+- [almalinux10](almalinux10/) - AlmaLinux 10 with systemd (EOL: May 2035)
+- [almalinux9](almalinux9/) - AlmaLinux 9 with systemd (EOL: May 2032)
+- [almalinux8](almalinux8/) - AlmaLinux 8 with systemd (EOL: May 2029)
 
 ### RHEL
 
 - [rhel9](rhel9/) - Red Hat Enterprise Linux 9 with systemd (Full Support: May 2027; Maintenance: May 2032; ELC available)
-- [rhel8-ubi](rhel8-ubi/) - Red Hat Enterprise Linux 8 (UBI) with systemd (Full Support: May 2029; Maintenance: May 2032; ELC available)
+- [rhel8-ubi](rhel8-ubi/) - Red Hat Enterprise Linux 8 (UBI) with systemd (Maintenance Support: May 2029; ELS: May 2033)
 
 ### SUSE
 
@@ -93,15 +93,15 @@ This project provides ready-to-use Docker images for numerous Linux distribution
 
 ### Ubuntu
 
-- [ubuntu2604](ubuntu2604/) - Ubuntu 26.04 LTS (Resolute Raccoon) with systemd (EOL: May 29, 2031; ESM: April 2036)
+- [ubuntu2604](ubuntu2604/) - Ubuntu 26.04 LTS (Resolute Raccoon) with systemd (EOL: April 30, 2031; ESM: April 2036)
 - [ubuntu2510](ubuntu2510/) - Ubuntu 25.10 (Questing Quokka) with systemd ⚠️ *(Deprecated - EOL July 9, 2026)*
 - [ubuntu2504](ubuntu2504/) - Ubuntu 25.04 (Plucky Puffin) with systemd ⚠️ *(Deprecated - EOL January 15, 2026)*
 - [ubuntu2410](ubuntu2410/) - Ubuntu 24.10 (Oracular Oriole) with systemd ⚠️ *(Deprecated - EOL July 10, 2025)*
-- [ubuntu2404](ubuntu2404/) - Ubuntu 24.04 LTS (Noble Numbat) with systemd (EOL: May 31, 2029; ESM: April 2034)
+- [ubuntu2404](ubuntu2404/) - Ubuntu 24.04 LTS (Noble Numbat) with systemd (EOL: May 31, 2029; ESM: May 2036)
 - [ubuntu2304](ubuntu2304/) - Ubuntu 23.04 (Lunar Lobster) with systemd ⚠️ *(Deprecated - EOL January 25, 2024)*
-- [ubuntu2204](ubuntu2204/) - Ubuntu 22.04 LTS (Jammy Jellyfish) with systemd (EOL: June 1, 2027; ESM: April 2032)
+- [ubuntu2204](ubuntu2204/) - Ubuntu 22.04 LTS (Jammy Jellyfish) with systemd (EOL: April 1, 2027; ESM: April 2032)
 - [ubuntu2004](ubuntu2004/) - Ubuntu 20.04 LTS (Focal Fossa) with systemd ⚠️ *(Deprecated - EOL May 29, 2025; ESM: April 2030)*
-- [ubuntu1804](ubuntu1804/) - Ubuntu 18.04 LTS (Bionic Beaver) with systemd ⚠️ *(Deprecated - EOL April 2023; ESM: April 2028)*
+- [ubuntu1804](ubuntu1804/) - Ubuntu 18.04 LTS (Bionic Beaver) with systemd ⚠️ *(Deprecated - EOL May 2023; ESM: April 2028)*
 
 ## Usage
 
