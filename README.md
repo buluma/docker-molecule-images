@@ -63,15 +63,15 @@ This project provides ready-to-use Docker images for numerous Linux distribution
 
 ### Oracle Linux
 
+- [oraclelinux10](oraclelinux10/) - Oracle Linux 10 with systemd (EOL: June 2035; Extended Support available)
 - [oraclelinux9](oraclelinux9/) - Oracle Linux 9 with systemd (EOL: June 30, 2032; Extended: June 30, 2035)
 - [oraclelinux8](oraclelinux8/) - Oracle Linux 8 with systemd (EOL: July 31, 2029; Extended: July 31, 2032)
 - [oraclelinux7](oraclelinux7/) - Oracle Linux 7 with systemd ⚠️ *(Deprecated - EOL December 31, 2024; Extended: June 30, 2028)*
 
 ### Rocky Linux
 
+- [rockylinux10](rockylinux10/) - Rocky Linux 10 with systemd (EOL: May 2035)
 - [rockylinux9](rockylinux9/) - Rocky Linux 9 with systemd (EOL: May 2032)
-- [rockylinux8](rockylinux8/) - Rocky Linux 8 with systemd ⚠️ *(Deprecated - EOL May 2029)*
-- [rockylinux10](rockylinux10/) - Rocky Linux 10 with systemd ⚠️ *(Deprecated - Base image not available)*
 
 ### AlmaLinux
 
@@ -185,11 +185,13 @@ docker run -it --rm --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw ghcr.io/bul
 
 ### Oraclelinux
 
+[![oraclelinux-10](https://github.com/buluma/docker-molecule-images/actions/workflows/oraclelinux10.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/oraclelinux10.yml)
 [![oraclelinux-9](https://github.com/buluma/docker-molecule-images/actions/workflows/oraclelinux9.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/oraclelinux9.yml)
 [![oraclelinux-8](https://github.com/buluma/docker-molecule-images/actions/workflows/oraclelinux8.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/oraclelinux8.yml)
 
 ### Rockylinux
 
+[![rockylinux-10](https://github.com/buluma/docker-molecule-images/actions/workflows/rockylinux10.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/rockylinux10.yml)
 [![rockylinux-9](https://github.com/buluma/docker-molecule-images/actions/workflows/rockylinux9.yml/badge.svg)](https://github.com/buluma/docker-molecule-images/actions/workflows/rockylinux9.yml)
 
 ### AlmaLinux
