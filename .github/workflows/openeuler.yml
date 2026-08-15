@@ -1,17 +1,17 @@
 ---
-name: rockylinux10
+name: openeuler
 
 on:
   pull_request:
     paths:
-      - 'rockylinux10/**'
-      - '.github/workflows/rockylinux10.yml'
+      - 'openeuler/**'
+      - '.github/workflows/openeuler.yml'
   push:
     paths:
-      - 'rockylinux10/**'
-      - '.github/workflows/rockylinux10.yml'
+      - 'openeuler/**'
+      - '.github/workflows/openeuler.yml'
   schedule:
-    - cron: '10 16 * * 1'
+    - cron: '10 18 * * 5'
   workflow_dispatch:
 
 permissions: write-all
@@ -23,7 +23,7 @@ concurrency:
 jobs:
   # Test the image builds and works correctly.
   test:
-    name: Test rockylinux10
+    name: Test openeuler
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -33,10 +33,10 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
 
       - name: Test building image.
-        run: cd rockylinux10 && docker build -t rockylinux10 .
+        run: cd openeuler && docker build -t openeuler .
 
       - name: Run the built image.
-        run: docker run --name test-container -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw rockylinux10
+        run: docker run --name test-container -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw openeuler
 
   # If on master branch, build and release image.
   release:
@@ -52,7 +52,7 @@ jobs:
         with:
           # list of Docker images to use as base name for tags
           images: |
-            ${{ github.repository }}:rockylinux10
+            ${{ github.repository }}:openeuler
           # generate Docker tags based on the following events/attributes
           tags: |
             type=schedule
@@ -83,12 +83,12 @@ jobs:
       - name: Build and push image.
         uses: docker/build-push-action@53b7df96c91f9c12dcc8a07bcb9ccacbed38856a # v7
         with:
-          context: rockylinux10/
+          context: openeuler/
           sbom: true
           provenance: mode=max
-          file: rockylinux10/Dockerfile
-          platforms: linux/amd64, linux/arm64
+          file: openeuler/Dockerfile
+          # platforms: linux/amd64, linux/arm64
           push: ${{ github.event_name != 'pull_request' }}
           tags: |
-            ${{ github.repository }}:rockylinux10, ${{ github.repository }}:10
+            ${{ github.repository }}:openeuler, ${{ github.repository }}:openeuler_latest
           labels: ${{ steps.meta.outputs.labels }}
