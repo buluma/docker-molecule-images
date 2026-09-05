@@ -31,7 +31,7 @@ This project provides ready-to-use Docker images for numerous Linux distribution
 
 - [debian13](debian13/) - Debian 13 (Trixie) with systemd (EOL: 2030)
 - [debian12](debian12/) - Debian 12 (Bookworm) with systemd (EOL: 2028)
-- [debian11](debian11/) - Debian 11 (Bullseye) with systemd (EOL: 2026)
+- [debian11](debian11/) - Debian 11 (Bullseye) with systemd ⚠️ *(Deprecated - EOL August 31, 2026)*
 - [debian10](debian10/) - Debian 10 (Buster) with systemd ⚠️ *(Deprecated - EOL June 2024)*
 - [debian9](debian9/) - Debian 9 (Stretch) with systemd ⚠️ *(Deprecated - EOL June 2022)*
 
