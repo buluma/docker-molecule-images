@@ -37,7 +37,7 @@ This project provides ready-to-use Docker images for numerous Linux distribution
 
 ### Fedora
 
-- [fedora45](fedora45/) - Fedora 45 with systemd (EOL: November 24, 2027)
+- [fedora45](fedora45/) - Fedora 45 with systemd ⚠️ *(Tracks Rawhide - Fedora 45 hasn't shipped yet, no fixed EOL)*
 - [fedora44](fedora44/) - Fedora 44 with systemd (EOL: June 2, 2027)
 - [fedora43](fedora43/) - Fedora 43 with systemd (EOL: December 9, 2026)
 - [fedora42](fedora42/) - Fedora 42 with systemd ⚠️ *(Deprecated - EOL May 27, 2026)*
@@ -57,9 +57,9 @@ This project provides ready-to-use Docker images for numerous Linux distribution
 
 ### OpenSUSE
 
-- [opensuse156](opensuse156/) - openSUSE Leap 15.6 with systemd (EOL: April 30, 2026)
+- [opensuse156](opensuse156/) - openSUSE Leap 15.6 with systemd ⚠️ *(Deprecated - EOL April 30, 2026)*
 - [opensuse-tumbleweed](opensuse-tumbleweed/) - openSUSE Tumbleweed with systemd (Rolling release)
-- [opensuse](opensuse/) - OpenSUSE with systemd ⚠️ *(Deprecated - EOL Dec 2024)*
+- [opensuse](opensuse/) - openSUSE Leap 16.0 with systemd (EOL: October 31, 2027)
 
 ### Oracle Linux
 
@@ -87,7 +87,7 @@ This project provides ready-to-use Docker images for numerous Linux distribution
 ### SUSE
 
 - [opensuse-tumbleweed](opensuse-tumbleweed/) - openSUSE Tumbleweed with systemd (Rolling release)
-- [opensuse156](opensuse156/) - openSUSE Leap 15.6 with systemd (EOL: April 30, 2026)
+- [opensuse156](opensuse156/) - openSUSE Leap 15.6 with systemd ⚠️ *(Deprecated - EOL April 30, 2026)*
 - [sles15](sles15/) - SUSE Linux Enterprise Server 15 with systemd ⚠️ *(Deprecated - Auth required, systemd path issue)*
 - [sles12](sles12/) - SUSE Linux Enterprise Server 12 with systemd ⚠️ *(Deprecated - Auth required)*
 
