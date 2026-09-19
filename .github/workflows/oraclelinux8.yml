@@ -7,6 +7,8 @@ on:
       - 'oraclelinux8/**'
       - '.github/workflows/oraclelinux8.yml'
   push:
+    branches:
+      - master
     paths:
       - 'oraclelinux8/**'
       - '.github/workflows/oraclelinux8.yml'

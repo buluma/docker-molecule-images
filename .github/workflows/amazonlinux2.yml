@@ -7,6 +7,8 @@ on:
       - 'amazonlinux2/**'
       - '.github/workflows/amazonlinux2.yml'
   push:
+    branches:
+      - master
     paths:
       - 'amazonlinux2/**'
       - '.github/workflows/amazonlinux2.yml'

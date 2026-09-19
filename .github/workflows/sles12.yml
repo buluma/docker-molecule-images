@@ -7,6 +7,8 @@ on:
       - 'sles12/**'
       - '.github/workflows/sles12.yml'
   push:
+    branches:
+      - master
     paths:
       - 'sles12/**'
       - '.github/workflows/sles12.yml'

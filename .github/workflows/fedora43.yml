@@ -7,6 +7,8 @@ on:
       - 'fedora43/**'
       - '.github/workflows/fedora43.yml'
   push:
+    branches:
+      - master
     paths:
       - 'fedora43/**'
       - '.github/workflows/fedora43.yml'

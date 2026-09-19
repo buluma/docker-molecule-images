@@ -7,6 +7,8 @@ on:
       - 'opensuse/**'
       - '.github/workflows/opensuse.yml'
   push:
+    branches:
+      - master
     paths:
       - 'opensuse/**'
       - '.github/workflows/opensuse.yml'
