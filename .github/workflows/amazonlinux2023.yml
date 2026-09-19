@@ -7,6 +7,8 @@ on:
       - 'amazonlinux2023/**'
       - '.github/workflows/amazonlinux2023.yml'
   push:
+    branches:
+      - master
     paths:
       - 'amazonlinux2023/**'
       - '.github/workflows/amazonlinux2023.yml'

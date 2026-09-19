@@ -7,6 +7,8 @@ on:
       - 'almalinux10/**'
       - '.github/workflows/almalinux10.yml'
   push:
+    branches:
+      - master
     paths:
       - 'almalinux10/**'
       - '.github/workflows/almalinux10.yml'

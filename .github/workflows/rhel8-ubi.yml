@@ -7,6 +7,8 @@ on:
       - 'rhel8-ubi/**'
       - '.github/workflows/rhel8-ubi.yml'
   push:
+    branches:
+      - master
     paths:
       - 'rhel8-ubi/**'
       - '.github/workflows/rhel8-ubi.yml'

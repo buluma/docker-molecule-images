@@ -7,6 +7,8 @@ on:
       - 'kalilinux/**'
       - '.github/workflows/kalilinux.yml'
   push:
+    branches:
+      - master
     paths:
       - 'kalilinux/**'
       - '.github/workflows/kalilinux.yml'

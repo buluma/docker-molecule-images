@@ -7,6 +7,8 @@ on:
       - 'ubuntu2204/**'
       - '.github/workflows/ubuntu2204.yml'
   push:
+    branches:
+      - master
     paths:
       - 'ubuntu2204/**'
       - '.github/workflows/ubuntu2204.yml'

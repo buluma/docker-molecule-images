@@ -7,6 +7,8 @@ on:
       - 'rockylinux10/**'
       - '.github/workflows/rockylinux10.yml'
   push:
+    branches:
+      - master
     paths:
       - 'rockylinux10/**'
       - '.github/workflows/rockylinux10.yml'

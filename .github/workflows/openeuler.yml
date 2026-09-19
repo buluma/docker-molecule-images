@@ -7,6 +7,8 @@ on:
       - 'openeuler/**'
       - '.github/workflows/openeuler.yml'
   push:
+    branches:
+      - master
     paths:
       - 'openeuler/**'
       - '.github/workflows/openeuler.yml'

@@ -7,6 +7,8 @@ on:
       - 'debian11/**'
       - '.github/workflows/debian11.yml'
   push:
+    branches:
+      - master
     paths:
       - 'debian11/**'
       - '.github/workflows/debian11.yml'

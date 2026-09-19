@@ -7,6 +7,8 @@ on:
       - 'rhel9/**'
       - '.github/workflows/rhel9.yml'
   push:
+    branches:
+      - master
     paths:
       - 'rhel9/**'
       - '.github/workflows/rhel9.yml'
