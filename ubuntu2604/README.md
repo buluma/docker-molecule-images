@@ -1,12 +1,6 @@
-# Ubuntu 26.04
+# Ubuntu 26.04 LTS
 
-Docker image for Ubuntu 26.04 (Provisional), designed for testing Ansible roles.
-
-## Overview
-
-Ubuntu 26.04 is a future release of the Ubuntu Linux distribution, codenamed "Provisional" until officially named.
-
-⚠️ **Note**: This image is for testing purposes only and assumes that Ubuntu 26.04 will be released as scheduled. The actual release schedule may vary.
+Docker image for Ubuntu 26.04 LTS (Resolute Raccoon), designed for testing Ansible roles. The release shipped on April 23, 2026 and receives standard support through May 29, 2031.
 
 ## Features
 

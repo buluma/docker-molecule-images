@@ -2,12 +2,12 @@ FROM archlinux:latest
 # FROM menci/archlinuxarm:latest
 
 LABEL maintainer="buluma"
-LABEL build_date="2024-03-25"
+LABEL build_date="2026-11-21"
 
 ENV container=docker
 
 # Clean services
-RUN pacman -Sy --noconfirm systemd-sysvcompat sudo && \
+RUN pacman -Syu --noconfirm --needed systemd-sysvcompat sudo && \
   cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i == systemd-tmpfiles-setup.service ] || rm -f $i; done ;\
   rm -f /lib/systemd/system/multi-user.target.wants/*;\
   rm -f /etc/systemd/system/*.wants/*;\

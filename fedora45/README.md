@@ -4,7 +4,7 @@ Docker image for Fedora 45, designed for testing Ansible roles.
 
 ## Overview
 
-Fedora 45 tracks Rawhide and has not yet shipped, featuring the latest open source technologies and tools for developers, creators, and system administrators.
+Fedora 45 is a stable release of Fedora Linux, featuring the latest open source technologies and tools for developers, creators, and system administrators. It was released on November 3, 2026 and reaches end of life on December 8, 2027.
 
 ## Features
 

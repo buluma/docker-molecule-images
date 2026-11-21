@@ -4,7 +4,7 @@ FROM ubuntu:26.04
 
 LABEL org.opencontainers.image.authors="Michael Buluma <me@buluma.co.ke>"
 LABEL org.opencontainers.image.title="Docker Molecule Images - Ubuntu 26.04"
-LABEL org.opencontainers.image.description="Ubuntu 26.04 (Provisional) for testing Ansible roles"
+LABEL org.opencontainers.image.description="Ubuntu 26.04 LTS for testing Ansible roles"
 LABEL org.opencontainers.image.base.name="ubuntu:26.04"
 LABEL org.opencontainers.image.licenses="Apache-2.0"
 LABEL buluma.role-name="docker-molecule-images"
